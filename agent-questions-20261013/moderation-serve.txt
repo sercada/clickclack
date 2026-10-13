@@ -1,0 +1,17 @@
+channel blocked -> answered: HTTP 403; stored submitted v2 + response unchanged; durable events delta=0
+  restriction cleared -> HTTP 200; answered v3
+channel blocked -> open: HTTP 403; stored submitted v2 + response unchanged; durable events delta=0
+  restriction cleared -> HTTP 200; open v3
+channel timeout -> answered: HTTP 403; stored submitted v2 + response unchanged; durable events delta=0
+  restriction cleared -> HTTP 200; answered v3
+channel timeout -> open: HTTP 403; stored submitted v2 + response unchanged; durable events delta=0
+  restriction cleared -> HTTP 200; open v3
+direct blocked -> answered: HTTP 403; stored submitted v2 + response unchanged; durable events delta=0
+  restriction cleared -> HTTP 200; answered v3
+direct blocked -> open: HTTP 403; stored submitted v2 + response unchanged; durable events delta=0
+  restriction cleared -> HTTP 200; open v3
+direct timeout -> answered: HTTP 403; stored submitted v2 + response unchanged; durable events delta=0
+  restriction cleared -> HTTP 200; answered v3
+direct timeout -> open: HTTP 403; stored submitted v2 + response unchanged; durable events delta=0
+  restriction cleared -> HTTP 200; open v3
+PASS: real serve entry point, synthetic identities, token values and IDs omitted

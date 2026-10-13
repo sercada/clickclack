@@ -1,0 +1,6 @@
+sqlite: official v0.7.1 -> candidate serve upgrade: users/workspaces/members/channels/messages/uploads/bot_tokens/events/cleanup counts unchanged
+sqlite: exact profile/settings and workspace metadata preserved; credential row fingerprint unchanged; original bot token authenticates and original nonce replays same message
+sqlite: pre-upgrade root/reply authors and bodies, thread, search, and exact uploaded file bytes remain readable
+sqlite: allow_skip omitted ->201, persisted true; human skip ->200; original bot records cancelled v3
+sqlite: allow_skip false ->201, persisted false; forbidden skip ->400 with entire question and events unchanged; normal answer/resolve ->200 v3
+PASS sqlite: shipped entry point, populated latest-stable upgrade and optional-input defaults; synthetic identities and secrets omitted

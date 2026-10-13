@@ -21,3 +21,10 @@ The verified official v0.7.0 release binary populated independent SQLite and Pos
 
 - [SQLite transcript](upgrade-sqlite.txt)
 - [PostgreSQL transcript](upgrade-postgres.txt)
+
+## Latest stable repeat
+
+The same finite harness also passed with the official latest v0.7.1 binary, verified against its release checksum (Linux amd64 archive sha256 6ecc69824770d6b1527d3674ffb64aea9a6422faa433100eea0fa5a223bfd713). The final 0c3cadcc Go server was rebuilt, then reopened populated SQLite/PostgreSQL data. This repeat confirms the prior retained-data, moderator/former-owner denial, current-owner deletion, physical file, search, and event-cursor facts on latest stable. PostgreSQL fixture processes were stopped, and local synthetic databases preserved.
+
+- [v0.7.1 SQLite transcript](upgrade-v071-sqlite.txt)
+- [v0.7.1 PostgreSQL transcript](upgrade-v071-postgres.txt)
