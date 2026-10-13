@@ -1,0 +1,6 @@
+START: current source managed Gateway CLI, actual ClickClack #258 backend and native account transport; isolated synthetic state only.
+PASS allowed-answer: public Gateway readback answered; exactly one successful original resolution; native card answered; actual agent.wait=ok.
+PASS allowed-skip: public Gateway readback cancelled; exactly one successful original resolution; native card cancelled; actual agent.wait=ok.
+REPRODUCED resolution-revoked-answer: allowFrom removed AFTER helper authorization, while original question.resolve retained before native commit; Gateway/owner=answered; real manager effects=1; unchanged actual account start=1791924683718.
+REPRODUCED resolution-revoked-skip: allowFrom removed AFTER helper authorization, while original question.resolve retained before native commit; Gateway/owner=cancelled; real manager effects=1; unchanged actual account start=1791924683718.
+PASS: native resolution-commit observer completed; original manager outcomes recorded; product source was not changed.

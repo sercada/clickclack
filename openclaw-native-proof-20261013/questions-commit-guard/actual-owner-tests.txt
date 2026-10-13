@@ -1,0 +1,22 @@
+bun test v1.4.3-canary.1 (65d94e715)
+
+src/infra/question-gateway-resolver.commit-guard.test.ts:
+(pass) commits an admitted native answer through the actual question owner [175.69ms]
+(pass) commits an admitted native skip through the actual question owner [54.55ms]
+(pass) denies answer when responder or account authority closes before native commit [43.79ms]
+(pass) denies skip when responder or account authority closes before native commit [34.48ms]
+(pass) preserves an accepted answer when its caller closes before the reply settles [23.53ms]
+(pass) preserves an accepted skip when its caller closes before the reply settles [17.99ms]
+(pass) retains completion revalidation for a question read whose caller closes [31.20ms]
+(pass) rejects a legacy boolean authorizer for native answer [11.20ms]
+(pass) rejects a legacy boolean authorizer for native skip [17.67ms]
+(pass) retains native answer validation and refuses secret question answers [17.68ms]
+(pass) returns terminal outcomes without a native answer effect [21.07ms]
+(pass) returns terminal outcomes without a native skip effect [10.87ms]
+(pass) refuses standalone and explicit remote native answer [7.84ms]
+(pass) refuses standalone and explicit remote native skip [12.08ms]
+
+ 14 pass
+ 0 fail
+ 53 expect() calls
+Ran 14 tests across 1 file. [4.80s]

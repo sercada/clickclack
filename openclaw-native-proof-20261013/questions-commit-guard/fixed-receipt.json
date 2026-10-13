@@ -1,0 +1,456 @@
+{
+  "sourceHead": "b468995c4a46354c8c48e907aa1fe78559125fd4",
+  "sourceTree": "f544fca959fc85297ac8e63ef139c6ba23305c7d",
+  "backendHead": "2eabd69dfd4b81ceef226409a3190f13782d7e49",
+  "backendBinarySha256": "31aa5242df10110cecfa45a922626b2b0ed25ca0c08cf18d4144de2e43d66ed2",
+  "fixtureHashes": {
+    "gateway-entry.mts": "07ff2bde6213a93baacff7d833ea4062778df5d68a94e3dae37b5a4b09267701",
+    "run-proof.mts": "1e0aee2b5c23751fdb73edd4544997ef78884cd53b542a5b82612229f7e898f1"
+  },
+  "runtime": {
+    "bun": "1.4.3",
+    "qualifiedRevision": "1.4.3-canary.1+65d94e715",
+    "executableSha256": "a74610af94648d54fa2312f319258a8821b509948d9dd9d6eb5f577e78a470e4",
+    "boundary": "qualified Bun source Gateway, not primary Node package build"
+  },
+  "modelRequestCount": 8,
+  "registryGenerations": [
+    {
+      "generation": 1,
+      "observedAt": 1791927273008,
+      "descriptorCount": 528,
+      "metadataSha256": "f5dee22aff99bfecd0ec8591d985876957d575b5b38d23e32fa563aa2e4c5ece",
+      "descriptorReferencesRetained": true
+    }
+  ],
+  "expectedGuard": true,
+  "cases": [
+    {
+      "name": "allowed-answer",
+      "questionId": "ask_862949c368501a9724efeee0b9846518",
+      "cardId": "msg_01m4vk16fgwgntpgrk6hnaj36r",
+      "question": {
+        "status": "answered",
+        "resolvedBy": "clickclack:usr_01m4vjzj6jn7yry7tw2b5qxbe5",
+        "answers": {
+          "answers": {
+            "color": [
+              "Blue"
+            ]
+          }
+        }
+      },
+      "writes": [
+        {
+          "id": "ask_862949c368501a9724efeee0b9846518",
+          "generation": 1,
+          "cancel": false,
+          "resolvedBy": "clickclack:usr_01m4vjzj6jn7yry7tw2b5qxbe5",
+          "enteredAt": 1791927294581,
+          "ownerBefore": "pending",
+          "ok": true,
+          "status": "answered",
+          "ownerStatus": "answered",
+          "ownerResolvedBy": "clickclack:usr_01m4vjzj6jn7yry7tw2b5qxbe5",
+          "completedAt": 1791927294595
+        }
+      ],
+      "effects": [
+        {
+          "method": "resolve",
+          "id": "ask_862949c368501a9724efeee0b9846518",
+          "enteredAt": 1791927294587,
+          "beforeStatus": "pending",
+          "ok": true,
+          "ownerStatus": "answered",
+          "completedAt": 1791927294595
+        }
+      ],
+      "reads": [
+        {
+          "id": "ask_862949c368501a9724efeee0b9846518",
+          "generation": 1,
+          "enteredAt": 1791927294416,
+          "held": false,
+          "ok": true,
+          "status": "pending",
+          "ownerStatus": "pending",
+          "ownerResponseAt": 1791927294418
+        },
+        {
+          "id": "ask_862949c368501a9724efeee0b9846518",
+          "generation": 1,
+          "enteredAt": 1791927294526,
+          "held": false,
+          "ok": true,
+          "status": "pending",
+          "ownerStatus": "pending",
+          "ownerResponseAt": 1791927294527
+        },
+        {
+          "id": "ask_862949c368501a9724efeee0b9846518",
+          "generation": 1,
+          "enteredAt": 1791927294576,
+          "held": false,
+          "ok": true,
+          "status": "pending",
+          "ownerStatus": "pending",
+          "ownerResponseAt": 1791927294577
+        },
+        {
+          "id": "ask_862949c368501a9724efeee0b9846518",
+          "generation": 1,
+          "enteredAt": 1791927294663,
+          "held": false,
+          "ok": true,
+          "status": "answered",
+          "ownerStatus": "answered",
+          "ownerResponseAt": 1791927294663
+        }
+      ],
+      "agentWait": {
+        "status": "ok",
+        "startedAt": 1791927292970,
+        "endedAt": 1791927295364
+      },
+      "account": {
+        "accountId": "default",
+        "running": true,
+        "restartPending": false,
+        "lastStartAt": 1791927272123,
+        "lastStopAt": null
+      }
+    },
+    {
+      "name": "allowed-skip",
+      "questionId": "ask_2f4f4c9705bba3185e3ffbdf64736571",
+      "cardId": "msg_01m4vk19dw3q1wxy83s6zdbghj",
+      "question": {
+        "status": "cancelled",
+        "resolvedBy": "clickclack:usr_01m4vjzj6jn7yry7tw2b5qxbe5"
+      },
+      "writes": [
+        {
+          "id": "ask_2f4f4c9705bba3185e3ffbdf64736571",
+          "generation": 1,
+          "cancel": true,
+          "resolvedBy": "clickclack:usr_01m4vjzj6jn7yry7tw2b5qxbe5",
+          "enteredAt": 1791927297560,
+          "ownerBefore": "pending",
+          "ok": true,
+          "status": "cancelled",
+          "ownerStatus": "cancelled",
+          "ownerResolvedBy": "clickclack:usr_01m4vjzj6jn7yry7tw2b5qxbe5",
+          "completedAt": 1791927297565
+        }
+      ],
+      "effects": [
+        {
+          "method": "cancel",
+          "id": "ask_2f4f4c9705bba3185e3ffbdf64736571",
+          "enteredAt": 1791927297561,
+          "beforeStatus": "pending",
+          "ok": true,
+          "ownerStatus": "cancelled",
+          "completedAt": 1791927297565
+        }
+      ],
+      "reads": [
+        {
+          "id": "ask_2f4f4c9705bba3185e3ffbdf64736571",
+          "generation": 1,
+          "enteredAt": 1791927297457,
+          "held": false,
+          "ok": true,
+          "status": "pending",
+          "ownerStatus": "pending",
+          "ownerResponseAt": 1791927297457
+        },
+        {
+          "id": "ask_2f4f4c9705bba3185e3ffbdf64736571",
+          "generation": 1,
+          "enteredAt": 1791927297493,
+          "held": false,
+          "ok": true,
+          "status": "pending",
+          "ownerStatus": "pending",
+          "ownerResponseAt": 1791927297493
+        },
+        {
+          "id": "ask_2f4f4c9705bba3185e3ffbdf64736571",
+          "generation": 1,
+          "enteredAt": 1791927297558,
+          "held": false,
+          "ok": true,
+          "status": "pending",
+          "ownerStatus": "pending",
+          "ownerResponseAt": 1791927297558
+        },
+        {
+          "id": "ask_2f4f4c9705bba3185e3ffbdf64736571",
+          "generation": 1,
+          "enteredAt": 1791927297649,
+          "held": false,
+          "ok": true,
+          "status": "cancelled",
+          "ownerStatus": "cancelled",
+          "ownerResponseAt": 1791927297649
+        }
+      ],
+      "agentWait": {
+        "status": "ok",
+        "startedAt": 1791927297161,
+        "endedAt": 1791927298222
+      },
+      "account": {
+        "accountId": "default",
+        "running": true,
+        "restartPending": false,
+        "lastStartAt": 1791927272123,
+        "lastStopAt": null
+      }
+    },
+    {
+      "name": "resolution-revoked-answer",
+      "questionId": "ask_e62e827b688a02d2155cc4c27f00d437",
+      "cardId": "msg_01m4vk1c05r6nfhvgdhq2hdsdt",
+      "held": {
+        "event": "resolve-held",
+        "id": "ask_e62e827b688a02d2155cc4c27f00d437",
+        "generation": 1,
+        "ownerStatus": "pending",
+        "heldAt": 1791927300773,
+        "requestGuardPresent": true
+      },
+      "patchStartedAt": 1791927301233,
+      "patchCompletedAt": 1791927309211,
+      "releasedAt": 1791927309413,
+      "question": {
+        "status": "pending"
+      },
+      "writes": [
+        {
+          "id": "ask_e62e827b688a02d2155cc4c27f00d437",
+          "generation": 1,
+          "cancel": false,
+          "resolvedBy": "clickclack:usr_01m4vjzj6jn7yry7tw2b5qxbe5",
+          "enteredAt": 1791927300773,
+          "ownerBefore": "pending",
+          "heldAt": 1791927300773,
+          "requestGuardPresent": true,
+          "releasedAt": 1791927309416,
+          "errorName": "QuestionResolutionDeniedError",
+          "ownerStatus": "pending",
+          "completedAt": 1791927309417
+        }
+      ],
+      "effects": [],
+      "reads": [
+        {
+          "id": "ask_e62e827b688a02d2155cc4c27f00d437",
+          "generation": 1,
+          "enteredAt": 1791927300082,
+          "held": false,
+          "ok": true,
+          "status": "pending",
+          "ownerStatus": "pending",
+          "ownerResponseAt": 1791927300083
+        },
+        {
+          "id": "ask_e62e827b688a02d2155cc4c27f00d437",
+          "generation": 1,
+          "enteredAt": 1791927300384,
+          "held": false,
+          "ok": true,
+          "status": "pending",
+          "ownerStatus": "pending",
+          "ownerResponseAt": 1791927300385
+        },
+        {
+          "id": "ask_e62e827b688a02d2155cc4c27f00d437",
+          "generation": 1,
+          "enteredAt": 1791927300770,
+          "held": false,
+          "ok": true,
+          "status": "pending",
+          "ownerStatus": "pending",
+          "ownerResponseAt": 1791927300770
+        },
+        {
+          "id": "ask_e62e827b688a02d2155cc4c27f00d437",
+          "generation": 1,
+          "enteredAt": 1791927309465,
+          "held": false,
+          "ok": true,
+          "status": "pending",
+          "ownerStatus": "pending",
+          "ownerResponseAt": 1791927309465
+        }
+      ],
+      "accountBefore": {
+        "accountId": "default",
+        "running": true,
+        "restartPending": false,
+        "lastStartAt": 1791927272123,
+        "lastStopAt": null
+      },
+      "accountWhileRevoked": {
+        "accountId": "default",
+        "running": true,
+        "restartPending": false,
+        "lastStartAt": 1791927272123,
+        "lastStopAt": null
+      },
+      "accountAfterRead": {
+        "accountId": "default",
+        "running": true,
+        "restartPending": false,
+        "lastStartAt": 1791927272123,
+        "lastStopAt": null
+      },
+      "registryGenerations": [
+        {
+          "generation": 1,
+          "observedAt": 1791927273008,
+          "descriptorCount": 528,
+          "metadataSha256": "f5dee22aff99bfecd0ec8591d985876957d575b5b38d23e32fa563aa2e4c5ece",
+          "descriptorReferencesRetained": true
+        }
+      ],
+      "card": {
+        "status": "open",
+        "version": 3
+      },
+      "agentWait": {
+        "status": "ok",
+        "startedAt": 1791927299764,
+        "endedAt": 1791927315162
+      },
+      "agentWaitAfter": "separate synthetic management cleanup"
+    },
+    {
+      "name": "resolution-revoked-skip",
+      "questionId": "ask_9b7d5d5c49026e50c946b0e59a441e0f",
+      "cardId": "msg_01m4vk1wp71e0w35arvcdmw1vz",
+      "held": {
+        "event": "resolve-held",
+        "id": "ask_9b7d5d5c49026e50c946b0e59a441e0f",
+        "generation": 1,
+        "ownerStatus": "pending",
+        "heldAt": 1791927317456,
+        "requestGuardPresent": true
+      },
+      "patchStartedAt": 1791927317671,
+      "patchCompletedAt": 1791927322359,
+      "releasedAt": 1791927322561,
+      "question": {
+        "status": "pending"
+      },
+      "writes": [
+        {
+          "id": "ask_9b7d5d5c49026e50c946b0e59a441e0f",
+          "generation": 1,
+          "cancel": true,
+          "resolvedBy": "clickclack:usr_01m4vjzj6jn7yry7tw2b5qxbe5",
+          "enteredAt": 1791927317456,
+          "ownerBefore": "pending",
+          "heldAt": 1791927317456,
+          "requestGuardPresent": true,
+          "releasedAt": 1791927322561,
+          "errorName": "QuestionResolutionDeniedError",
+          "ownerStatus": "pending",
+          "completedAt": 1791927322562
+        }
+      ],
+      "effects": [],
+      "reads": [
+        {
+          "id": "ask_9b7d5d5c49026e50c946b0e59a441e0f",
+          "generation": 1,
+          "enteredAt": 1791927317180,
+          "held": false,
+          "ok": true,
+          "status": "pending",
+          "ownerStatus": "pending",
+          "ownerResponseAt": 1791927317180
+        },
+        {
+          "id": "ask_9b7d5d5c49026e50c946b0e59a441e0f",
+          "generation": 1,
+          "enteredAt": 1791927317206,
+          "held": false,
+          "ok": true,
+          "status": "pending",
+          "ownerStatus": "pending",
+          "ownerResponseAt": 1791927317206
+        },
+        {
+          "id": "ask_9b7d5d5c49026e50c946b0e59a441e0f",
+          "generation": 1,
+          "enteredAt": 1791927317454,
+          "held": false,
+          "ok": true,
+          "status": "pending",
+          "ownerStatus": "pending",
+          "ownerResponseAt": 1791927317454
+        },
+        {
+          "id": "ask_9b7d5d5c49026e50c946b0e59a441e0f",
+          "generation": 1,
+          "enteredAt": 1791927322601,
+          "held": false,
+          "ok": true,
+          "status": "pending",
+          "ownerStatus": "pending",
+          "ownerResponseAt": 1791927322601
+        }
+      ],
+      "accountBefore": {
+        "accountId": "default",
+        "running": true,
+        "restartPending": false,
+        "lastStartAt": 1791927272123,
+        "lastStopAt": null
+      },
+      "accountWhileRevoked": {
+        "accountId": "default",
+        "running": true,
+        "restartPending": false,
+        "lastStartAt": 1791927272123,
+        "lastStopAt": null
+      },
+      "accountAfterRead": {
+        "accountId": "default",
+        "running": true,
+        "restartPending": false,
+        "lastStartAt": 1791927272123,
+        "lastStopAt": null
+      },
+      "registryGenerations": [
+        {
+          "generation": 1,
+          "observedAt": 1791927273008,
+          "descriptorCount": 528,
+          "metadataSha256": "f5dee22aff99bfecd0ec8591d985876957d575b5b38d23e32fa563aa2e4c5ece",
+          "descriptorReferencesRetained": true
+        }
+      ],
+      "card": {
+        "status": "open",
+        "version": 3
+      },
+      "agentWait": {
+        "status": "ok",
+        "startedAt": 1791927316864,
+        "endedAt": 1791927328363
+      },
+      "agentWaitAfter": "separate synthetic management cleanup"
+    }
+  ],
+  "observationBoundary": {
+    "sameOriginalHandlerOptions": true,
+    "nativeMutationAuthorityWeakMapRetained": true,
+    "managerEffects": "synchronous delegated actual resolve/cancel calls",
+    "negativeWindow": "before separate synthetic management cancellation"
+  }
+}

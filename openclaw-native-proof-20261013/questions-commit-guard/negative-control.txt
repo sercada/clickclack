@@ -1,0 +1,61 @@
+bun test v1.4.3-canary.1 (65d94e715)
+
+src/infra/question-gateway-resolver.commit-guard.test.ts:
+(pass) commits an admitted native answer through the actual question owner [133.10ms]
+(pass) commits an admitted native skip through the actual question owner [36.01ms]
+153 |             account.abort();
+154 |           } else {
+155 |             senderCurrent = false;
+156 |           }
+157 |           release.resolve();
+158 |           expect(await pending).toEqual({ status: "denied" });
+                                      ^
+error: expect(received).toEqual(expected)
+
+  {
+-   "status": "denied",
++   "status": "answered",
+  }
+
+- Expected  - 1
++ Received  + 1
+
+      at <anonymous> ([source-root]/src/infra/question-gateway-resolver.commit-guard.test.ts:158:33)
+      at async <anonymous> ([source-root]/src/infra/question-gateway-resolver.commit-guard.test.ts:78:7)
+(fail) denies answer when responder or account authority closes before native commit [25.10ms]
+153 |             account.abort();
+154 |           } else {
+155 |             senderCurrent = false;
+156 |           }
+157 |           release.resolve();
+158 |           expect(await pending).toEqual({ status: "denied" });
+                                      ^
+error: expect(received).toEqual(expected)
+
+  {
+-   "status": "denied",
++   "status": "cancelled",
+  }
+
+- Expected  - 1
++ Received  + 1
+
+      at <anonymous> ([source-root]/src/infra/question-gateway-resolver.commit-guard.test.ts:158:33)
+      at async <anonymous> ([source-root]/src/infra/question-gateway-resolver.commit-guard.test.ts:78:7)
+(fail) denies skip when responder or account authority closes before native commit [15.51ms]
+(pass) preserves an accepted answer when its caller closes before the reply settles [28.58ms]
+(pass) preserves an accepted skip when its caller closes before the reply settles [19.26ms]
+(pass) retains completion revalidation for a question read whose caller closes [18.53ms]
+(pass) rejects a legacy boolean authorizer for native answer [10.86ms]
+(pass) rejects a legacy boolean authorizer for native skip [12.05ms]
+(pass) retains native answer validation and refuses secret question answers [18.63ms]
+(pass) returns terminal outcomes without a native answer effect [20.44ms]
+(pass) returns terminal outcomes without a native skip effect [13.33ms]
+(pass) refuses standalone and explicit remote native answer [10.32ms]
+(pass) refuses standalone and explicit remote native skip [10.24ms]
+
+ 12 pass
+ 2 fail
+ 41 expect() calls
+Ran 14 tests across 1 file. [6.68s]
+[test] FAILED (exit 1)

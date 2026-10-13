@@ -1,0 +1,32 @@
+{
+  "frozenAt": "2026-10-13T21:24:03.525953+00:00",
+  "headBeforeRepair": "9e901296221756a82a25949261c7708f91a38e72",
+  "base": "605065ce7461177e9b438c8d8917641a8e8380e0",
+  "candidateIndexTree": "f544fca959fc85297ac8e63ef139c6ba23305c7d",
+  "status": "M  docs/plugins/message-presentation.md\nD  extensions/clickclack/src/inbound.question-delivery.test.ts\nM  extensions/clickclack/src/questions.access.test.ts\nM  extensions/clickclack/src/questions.test.ts\nM  extensions/clickclack/src/questions.ts\nA  src/infra/question-gateway-resolver.commit-guard.test.ts\nM  src/infra/question-gateway-resolver.test.ts\nM  src/infra/question-gateway-resolver.ts\n",
+  "files": {
+    "docs/plugins/message-presentation.md": "3c496de7cfeafd7d93d53d6ea4239235862b30daddacbf7427ee1125287fd7c5",
+    "extensions/clickclack/src/inbound.question-delivery.test.ts": null,
+    "extensions/clickclack/src/questions.access.test.ts": "b72b07ec2c5b998b4b2841a1e7905ef697a7f9567ceecd68ada7035b1558e14d",
+    "extensions/clickclack/src/questions.test.ts": "7cf2ba7d9a156f65bb5a76b181849cdab21130564df758c67bac88402ba1b056",
+    "extensions/clickclack/src/questions.ts": "b00b01f680b596f291767bbdde15c5e5d8f5f1ac0f2d40569fc107cf4365066a",
+    "src/infra/question-gateway-resolver.test.ts": "f46c1147d7268bb94c8f9ce1b7fae2e9ba92a0e61d8ad12121ee842e7dc6b6b0",
+    "src/infra/question-gateway-resolver.ts": "2dd68e645f0bdd7a50fc45bd509afad9b5089f1e608133beccd566d73093da22",
+    "src/infra/question-gateway-resolver.commit-guard.test.ts": "fb619141c85e06121128d20bba31b62cddaa6866b2d5eb018881ae682b640846"
+  },
+  "checks": {
+    "newActualOwner": "14/14 PASS",
+    "negativeControl": "12 PASS; 2 late-denial FAIL; original bytes restored",
+    "legacyAndReads": "10/10 PASS",
+    "cardsAndActualAccessOwner": "42/42 PASS",
+    "sourceLint": "PASS; no type-aware lint",
+    "format": "PASS",
+    "nativeBaseline9e": "allowed2 PASS; revoked answer/skip reproduced actual effects",
+    "candidateNativeReplay": "not run yet",
+    "candidateCI": "not run yet"
+  },
+  "fixtureFiles": {
+    "gateway-entry.mts": "07ff2bde6213a93baacff7d833ea4062778df5d68a94e3dae37b5a4b09267701",
+    "run-proof.mts": "1e0aee2b5c23751fdb73edd4544997ef78884cd53b542a5b82612229f7e898f1"
+  }
+}

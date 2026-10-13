@@ -1,0 +1,23 @@
+[
+  {
+    "name": "clickclack",
+    "exit": {
+      "code": 0,
+      "signal": null
+    }
+  },
+  {
+    "name": "model",
+    "exit": {
+      "code": null,
+      "signal": "SIGTERM"
+    }
+  },
+  {
+    "name": "gateway",
+    "exit": {
+      "code": 0,
+      "signal": null
+    }
+  }
+]

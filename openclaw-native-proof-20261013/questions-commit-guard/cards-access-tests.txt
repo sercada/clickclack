@@ -1,0 +1,65 @@
+[test] starting test/vitest/vitest.extensions.config.ts
+
+ RUN  v5.0.1 [source-root]
+
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > buildClickClackQuestionSpec > maps every question of a pending record onto one card 149ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > buildClickClackQuestionSpec > keeps the text prompt for secret questions 23ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > buildClickClackQuestionSpec > keeps the text prompt for records about to expire 29ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > buildClickClackQuestionSpec > keeps the text prompt for finished records 50ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > buildClickClackQuestionSpec > keeps the text prompt for form labels requiring exact whitespace 21ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > buildClickClackQuestionSpec > keeps the text prompt for labels that identify another option's canonical value 18ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > buildClickClackQuestionSpec > keeps the text prompt for ids the card cannot carry 21ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > buildClickClackQuestionSpec > keeps the text prompt for labels that differ only by case 11ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > deliverClickClackQuestionPrompt > sends a card and settles it from the Gateway outcome 26ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > deliverClickClackQuestionPrompt > leaves a submitted card to the answer path 12ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > deliverClickClackQuestionPrompt > keeps the text prompt when there is no card to send 21ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > deliverClickClackQuestionPrompt > does not register a card on servers without questions 14ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > deliverClickClackQuestionPrompt > keeps checking a card when its answer event does not arrive 48ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > deliverClickClackQuestionPrompt > stops watching and finalizing a card once its account stops 45ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > deliverClickClackQuestionPrompt > keeps the text prompt once its account stopped 22ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > deliverClickClackQuestionPrompt > checks and finalizes a card outside the turn that asked 18ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > deliverClickClackQuestionPrompt > closes an open card from its watch when the finalizer did not 15ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > forwardClickClackQuestionAnswer > resolves the Gateway question with the card answer and records it 14ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > forwardClickClackQuestionAnswer > records { status: 'invalid', …(1) } as { status: 'open', …(1) } 12ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > forwardClickClackQuestionAnswer > records { status: 'already-terminal', …(1) } as { status: 'failed', …(1) } 15ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > forwardClickClackQuestionAnswer > records { status: 'denied' } as { status: 'open', …(1) } 12ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > forwardClickClackQuestionAnswer > cancels the Gateway question when the card was skipped 14ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > forwardClickClackQuestionAnswer > recognizes its own answer when a retry finds the question already answered 22ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > forwardClickClackQuestionAnswer > closes a card it reopened when the question ended meanwhile 17ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > forwardClickClackQuestionAnswer > reopens the card for people the agent does not accept messages from 11ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > forwardClickClackQuestionAnswer > writes nothing when the account stops while the card is read 12ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > forwardClickClackQuestionAnswer > writes nothing when the account stops while the responder is checked 70ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > forwardClickClackQuestionAnswer > denies the Gateway write when the account stops before the last check 15ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > forwardClickClackQuestionAnswer > leaves the card for the next start when the account stops after the Gateway resolves 14ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > forwardClickClackQuestionAnswer > does not let a newer account start join the run of a stopped one 18ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > forwardClickClackQuestionAnswer > ignores cards that are not submitted 18ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > forwardClickClackQuestionAnswer > ignores cards another bot asked 20ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > forwardClickClackQuestionAnswer > ignores questions from other tools 15ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > reconcileClickClackQuestions > settles cards whose Gateway question is gone and forwards submitted ones 17ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > reconcileClickClackQuestions > forwards a card answered between the listing and the settle 16ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > reconcileClickClackQuestions > does nothing on servers without questions 15ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > reconcileClickClackQuestions > watches cards whose question is still waiting from an earlier start 16ms
+ ✓ |extensions| extensions/clickclack/src/questions.test.ts > reconcileClickClackQuestions > keeps watching a submitted card that the new start reopened 15ms
+stderr | unknown test
+[sqlite-test-lifecycle] extensions/clickclack/src/questions.test.ts: retiring openclaw.stateDatabaseLifecycle
+[sqlite-test-lifecycle] extensions/clickclack/src/questions.test.ts: retiring openclaw.stateSnapshotOwners
+[sqlite-test-lifecycle] extensions/clickclack/src/questions.test.ts: retiring openclaw.agentDatabaseLifecycle
+[sqlite-test-lifecycle] extensions/clickclack/src/questions.test.ts: retiring openclaw.sessionStateNotices
+
+stderr | unknown test
+[sqlite-test-lifecycle] extensions/clickclack/src/questions.access.test.ts: retiring openclaw.stateDatabaseLifecycle
+[sqlite-test-lifecycle] extensions/clickclack/src/questions.access.test.ts: retiring openclaw.stateSnapshotOwners
+[sqlite-test-lifecycle] extensions/clickclack/src/questions.access.test.ts: retiring openclaw.agentDatabaseLifecycle
+[sqlite-test-lifecycle] extensions/clickclack/src/questions.access.test.ts: retiring openclaw.sessionStateNotices
+
+ ✓ |extensions| extensions/clickclack/src/questions.access.test.ts > accepts an explicit card answer with requireMention=false 65ms
+ ✓ |extensions| extensions/clickclack/src/questions.access.test.ts > accepts an explicit card answer with requireMention=true 16ms
+ ✓ |extensions| extensions/clickclack/src/questions.access.test.ts > refuses a answer after sender policy changes during the awaited Gateway read 28ms
+ ✓ |extensions| extensions/clickclack/src/questions.access.test.ts > refuses a skip after sender policy changes during the awaited Gateway read 17ms
+
+ Test Files  2 passed (2)
+      Tests  42 passed (42)
+   Start at  23:21:01
+   Duration  94.84s (transform 75%, import 19%, worker 4%, tests 1%, setup 1%)
+
+[test] passed 1 Vitest shard in 99.48s

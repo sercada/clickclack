@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-13T21:37:07.016574+00:00",
+  "head": "b468995c4a46354c8c48e907aa1fe78559125fd4",
+  "tree": "f544fca959fc85297ac8e63ef139c6ba23305c7d",
+  "result": "native late-commit proof independently verified",
+  "baselineInvalidResponderEffects": 2,
+  "fixedInvalidResponderEffects": 0,
+  "positiveControls": 2,
+  "nativeHandlerEntriesPerCase": 1,
+  "fixedNegativeRequestGuardPresent": true,
+  "fixedNegativeManagerAndPublicQuestionPending": true,
+  "fixedNegativeCardReopened": true,
+  "sameLiveAccountNoRestart": true,
+  "originalRegistryMetadataAndReferencesRetained": true,
+  "fixtureHashesAndBackendBinaryMatchBaseline": true,
+  "patchPublishedBeforeLatchReleased": true,
+  "negativeAgentWaitOkOnlyAfterSeparateAdminCleanup": true,
+  "fixtureProcessExitsVerified": true
+}

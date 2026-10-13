@@ -1,0 +1,11 @@
+{
+  "beforeSha256": "2dd68e645f0bdd7a50fc45bd509afad9b5089f1e608133beccd566d73093da22",
+  "startedAt": "2026-10-13T21:18:40.620908+00:00",
+  "removedProperty": "sessionMutationCommitGuard only",
+  "tests": "src/infra/question-gateway-resolver.commit-guard.test.ts",
+  "negativeSha256": "c61fd8168b8efa619e8a2deddbd36e5b25071348b5fdd5570e17480c4508a9c4",
+  "exitCode": 1,
+  "restoredSha256": "2dd68e645f0bdd7a50fc45bd509afad9b5089f1e608133beccd566d73093da22",
+  "finishedAt": "2026-10-13T21:18:51.023115+00:00",
+  "exactBytesRestored": true
+}

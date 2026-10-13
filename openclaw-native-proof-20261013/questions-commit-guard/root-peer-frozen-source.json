@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-13T21:25:05.594144+00:00",
+  "reviewer": "root independent source/fixture peer",
+  "headBeforeRepair": "9e901296221756a82a25949261c7708f91a38e72",
+  "candidateIndexTree": "f544fca959fc85297ac8e63ef139c6ba23305c7d",
+  "allEightFileHashesVerified": true,
+  "unstagedPaths": 0,
+  "result": "approved for bounded native proof and publication after canonical review",
+  "covered": [
+    "prepared async admission retains a synchronous current sender/account assertion",
+    "existing sessionMutationCommitGuard reaches actual native manager commit",
+    "new guarded writers refuse remote/standalone routing before effects",
+    "native writes preserve accepted outcome after caller closes; reads and legacy retain default completion revalidation",
+    "real QuestionManager/handler regression replaces answer/cancel RPC mocks",
+    "low-value double-mocked inbound delivery test removed; real native delivery proof retained",
+    "same-options native observer and baseline/fixed fixture identity were independently reviewed"
+  ],
+  "mandatoryPending": [
+    "full-candidate canonical review",
+    "fixed native answer/skip late-revocation matrix",
+    "new native CI and maintainer public SDK/security acceptance"
+  ]
+}
