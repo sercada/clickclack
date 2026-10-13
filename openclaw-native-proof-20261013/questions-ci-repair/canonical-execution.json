@@ -1,0 +1,9 @@
+{
+  "startedAt": "2026-10-13T22:16:08.617666+00:00",
+  "base": "b468995c4a46354c8c48e907aa1fe78559125fd4",
+  "candidateIndexTree": "d6dbe6a5900f365a35da5869974a70fcfa45f69d",
+  "scope": "only four-path CI correction, following completed full-candidate review",
+  "finishedAt": "2026-10-13T22:17:56.795125+00:00",
+  "exitCode": 0,
+  "sourceHashesUnchanged": true
+}

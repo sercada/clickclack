@@ -1,0 +1,2 @@
+[tsgo] no completion after 150000ms; killed the tsgo process tree. Raise OPENCLAW_TSGO_TIMEOUT_MS for intentionally longer builds, or unset it to disable the watchdog.
+[tsgo] FAILED (exit 1)

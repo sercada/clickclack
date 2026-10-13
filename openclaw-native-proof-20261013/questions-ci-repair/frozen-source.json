@@ -1,0 +1,27 @@
+{
+  "frozenAt": "2026-10-13T22:15:05.144755+00:00",
+  "parent": "b468995c4a46354c8c48e907aa1fe78559125fd4",
+  "candidateIndexTree": "d6dbe6a5900f365a35da5869974a70fcfa45f69d",
+  "baseForDeltaReview": "b468995c4a46354c8c48e907aa1fe78559125fd4",
+  "files": {
+    "extensions/clickclack/src/questions.access.test.ts": "7a24ddf3e0c082286b3b2e3dbf08b5ab9a0322207bcd8829dc140c30cad38dc1",
+    "extensions/clickclack/src/questions.test.ts": "22864b9642162e53b2723244a6e5b41c61b3dc9d4832f9af326978466a25da26",
+    "src/infra/question-gateway-resolver.commit-guard.test.ts": "c91d0b0a7e7b1417c11d3741b1198a47c9724c5d1e05a77591c05877ee1dd391",
+    "src/infra/question-gateway-resolver.ts": "21e5e51a51ddb2e04667b1314e909504e559e01988324039d9ea1a5e9db0e19f"
+  },
+  "checks": {
+    "actualOwner": "16 PASS; includes Promise and truthy predicates on answer/skip",
+    "cardsAndAccess": "42 PASS",
+    "sourceLintAndFormat": "PASS; no type-aware claim",
+    "nativeTypesInfraLeaf": "150000ms watchdog; incomplete, exit1, no diagnostics",
+    "coreTypeAwareLint": "180s timeout; incomplete, exit124, no diagnostics",
+    "freshNativeFixed4": "pending clean-head replay",
+    "freshCI": "pending publication"
+  },
+  "fixtureHashes": {
+    "gateway-entry.mts": "07ff2bde6213a93baacff7d833ea4062778df5d68a94e3dae37b5a4b09267701",
+    "run-proof.mts": "1e0aee2b5c23751fdb73edd4544997ef78884cd53b542a5b82612229f7e898f1"
+  },
+  "baselineNative9e": "fixture-1791924651196 preserved; no replay",
+  "priorFixedNativeb468": "fixture-1791927240431 preserved; no relabelling"
+}

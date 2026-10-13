@@ -1,0 +1,48 @@
+{
+  "native-owner": {
+    "startedAt": "2026-10-13T22:00:18.233125+00:00",
+    "finishedAt": "2026-10-13T22:00:28.765449+00:00",
+    "exitCode": 0,
+    "outcome": "PASS 16/16",
+    "ownedProcessesJoined": true
+  },
+  "cards-access": {
+    "startedAt": "2026-10-13T22:08:00.746805+00:00",
+    "finishedAt": "2026-10-13T22:09:52.904622+00:00",
+    "exitCode": 0,
+    "outcome": "PASS 42/42",
+    "ownedProcessesJoined": true
+  },
+  "source-lint": {
+    "startedAt": "2026-10-13T22:10:55.848444+00:00",
+    "finishedAt": "2026-10-13T22:11:02.790506+00:00",
+    "exitCode": 0,
+    "outcome": "PASS; syntax/style only, not type-aware",
+    "ownedProcessesJoined": true
+  },
+  "format-check": {
+    "startedAt": "2026-10-13T22:11:02.792098+00:00",
+    "finishedAt": "2026-10-13T22:11:04.066047+00:00",
+    "exitCode": 0,
+    "outcome": "PASS",
+    "ownedProcessesJoined": true
+  },
+  "native-types-leaf": {
+    "startedAt": "2026-10-13T22:00:28.767225+00:00",
+    "finishedAt": "2026-10-13T22:03:06.713889+00:00",
+    "exitCode": 1,
+    "outcome": "INCOMPLETE; 150000ms owner watchdog, no diagnostics",
+    "ownedProcessesJoined": true
+  },
+  "core-type-aware-lint": {
+    "startedAt": "2026-10-13T22:04:58.937710+00:00",
+    "finishedAt": "2026-10-13T22:08:00.740922+00:00",
+    "exitCode": 124,
+    "outcome": "INCOMPLETE; 180s timeout, no diagnostics",
+    "ownedProcessesJoined": true
+  },
+  "historical-legacy-read": {
+    "head": "b468995c4a46354c8c48e907aa1fe78559125fd4",
+    "outcome": "PASS 10/10; historical unchanged legacy/read paths, not rerun at new head"
+  }
+}

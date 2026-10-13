@@ -1,0 +1,37 @@
+{
+  "at": "2026-10-13T22:01:06.252865+00:00",
+  "head": "b468995c4a46354c8c48e907aa1fe78559125fd4",
+  "run": "https://github.com/openclaw/openclaw/actions/runs/38472041108",
+  "records": [
+    {
+      "job": "115554635232",
+      "sha256": "ec4eb7828963cac44af01a564a1bc9643f09e8a4cb6ce9764229eb72b71476a2",
+      "diagnostics": [
+        "2026-10-13T21:43:59.3574634Z src/infra/question-gateway-resolver.ts:51:9: error: This expression unnecessarily compares a boolean value to a boolean instead of negating it. (typescript(no-unnecessary-boolean-literal-compare))"
+      ],
+      "classification": "new contribution-owned source/test diagnostics",
+      "scope": "only four files changed by P1 repair"
+    },
+    {
+      "job": "115554635126",
+      "sha256": "68b37f197ce2f4482c442c016b2c4ce38d082780ce2746888dd2b9ea2f51fa1b",
+      "diagnostics": [
+        "2026-10-13T21:46:33.8625817Z extensions/clickclack/src/questions.access.test.ts:65:33: error: Unexpected `await` of a non-Promise (non-\"Thenable\") value. (typescript(await-thenable))",
+        "2026-10-13T21:46:33.8626732Z extensions/clickclack/src/questions.access.test.ts:108:33: error: Unexpected `await` of a non-Promise (non-\"Thenable\") value. (typescript(await-thenable))",
+        "2026-10-13T21:46:33.8627625Z extensions/clickclack/src/questions.test.ts:628:33: error: Unexpected `await` of a non-Promise (non-\"Thenable\") value. (typescript(await-thenable))"
+      ],
+      "classification": "new contribution-owned source/test diagnostics",
+      "scope": "only four files changed by P1 repair"
+    },
+    {
+      "job": "115554635168",
+      "sha256": "3e408467c4db3e4973378ed9632411a454b1ca2f5bda5a9d1ff9518ea2228686",
+      "diagnostics": [
+        "2026-10-13T21:44:24.5116673Z src/infra/question-gateway-resolver.commit-guard.test.ts(85,34): error TS2345: Argument of type 'GatewayRequestHandler | undefined' is not assignable to parameter of type 'GatewayRequestHandler'.",
+        "2026-10-13T21:44:24.5119878Z src/infra/question-gateway-resolver.commit-guard.test.ts(201,11): error TS2345: Argument of type '() => Promise<CancelQuestionOverGatewayResult> | Promise<ResolveQuestionAnswersOverGatewayResult>' is not assignable to parameter of type '() => Promise<CancelQuestionOverGatewayResult> | CancelQuestionOverGatewayResult'."
+      ],
+      "classification": "new contribution-owned source/test diagnostics",
+      "scope": "only four files changed by P1 repair"
+    }
+  ]
+}

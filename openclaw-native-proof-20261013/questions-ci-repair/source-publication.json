@@ -1,0 +1,19 @@
+{
+  "startedAt": "2026-10-13T22:24:20.432662+00:00",
+  "head": "1ad23a03371c2a8e79b51bf5862dec9aa037bef2",
+  "mode": "normal fast-forward, no force",
+  "parent": "b468995c4a46354c8c48e907aa1fe78559125fd4",
+  "remoteBefore": "b468995c4a46354c8c48e907aa1fe78559125fd4",
+  "pushExitCode": 0,
+  "remoteAfter": "1ad23a03371c2a8e79b51bf5862dec9aa037bef2",
+  "pullRequestReadback": {
+    "head": "1ad23a03371c2a8e79b51bf5862dec9aa037bef2",
+    "maintainerCanModify": true,
+    "state": "open",
+    "url": "https://github.com/openclaw/openclaw/pull/147027"
+  },
+  "localReadback": "1ad23a03371c2a8e79b51bf5862dec9aa037bef2",
+  "clean": true,
+  "outcome": "verified",
+  "finishedAt": "2026-10-13T22:24:26.830650+00:00"
+}

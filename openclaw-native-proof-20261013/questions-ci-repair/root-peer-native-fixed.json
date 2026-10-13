@@ -1,0 +1,32 @@
+{
+  "verifiedAt": "2026-10-13T22:24:52.660052+00:00",
+  "sourceHead": "1ad23a03371c2a8e79b51bf5862dec9aa037bef2",
+  "sourceTree": "d6dbe6a5900f365a35da5869974a70fcfa45f69d",
+  "fixtureHashes": {
+    "gateway-entry.mts": "07ff2bde6213a93baacff7d833ea4062778df5d68a94e3dae37b5a4b09267701",
+    "run-proof.mts": "1e0aee2b5c23751fdb73edd4544997ef78884cd53b542a5b82612229f7e898f1"
+  },
+  "sourceReceiptSha256": "c34d1feb7ae8874591c24e23ec01e490ecdd39dc074c81b86d8334a3cdd5475c",
+  "processReceiptSha256": "b74b74181baf56d0ec62134dea4cab63c3f4734167bbfe521ce27d6ae2d8004b",
+  "qualifiedBunSha256": "a74610af94648d54fa2312f319258a8821b509948d9dd9d6eb5f577e78a470e4",
+  "cases": {
+    "allowed-answer": "one original handler entry, one real manager effect, actual asking turn ok",
+    "allowed-skip": "one original handler entry, one real manager effect, actual asking turn ok",
+    "resolution-revoked-answer": "one original handler entry with native guard, denied, zero manager effects, owner/public pending, card open",
+    "resolution-revoked-skip": "one original handler entry with native guard, denied, zero manager effects, owner/public pending, card open"
+  },
+  "sameActualRunningAccountStart": 1791930027821,
+  "registryGeneration": 1,
+  "descriptorCount": 528,
+  "descriptorReferencesRetained": true,
+  "modelRequests": 8,
+  "processesJoined": true,
+  "gatewayExit": 0,
+  "backendExit": 0,
+  "modelTermination": "SIGTERM",
+  "negativeProducerCompletion": "only after separate management cleanup; not attributed to denied response",
+  "findings": [],
+  "publicReceiptSha256": "558afcd0aa8c8ec90fb2267501df92886e824be7360a75a6cec834bc1f06ed8f",
+  "publicProcessReceiptSha256": "988cb11f6a06c0fdbf4378b90e05c11c2b3fa26789c99918939f135b8c6b5ad2",
+  "receiptProvenance": "sourceReceiptSha256/processReceiptSha256 bind the private original receipts independently verified by root; public hashes bind the sanitized exports. Outcomes, effect counts and account/registry assertions are unchanged."
+}

@@ -1,0 +1,21 @@
+[test] starting test/vitest/vitest.infra.config.ts
+
+ RUN  v5.0.1 [source-root]
+
+ ✓ |infra| src/infra/question-gateway-resolver.test.ts > resolveQuestionOverGateway > does not resolve when access is lost between the read and the write 86ms
+ ✓ |infra| src/infra/question-gateway-resolver.test.ts > resolveQuestionOverGateway > resolves as usual when access still holds at the write 41ms
+ ✓ |infra| src/infra/question-gateway-resolver.test.ts > resolveQuestionOverGateway > maps the rendered option value to the canonical question id 14ms
+ ✓ |infra| src/infra/question-gateway-resolver.test.ts > resolveQuestionOverGateway > returns a terminal outcome when question.get races 16ms
+ ✓ |infra| src/infra/question-gateway-resolver.test.ts > resolveQuestionOverGateway > returns a terminal outcome when question.resolve races 13ms
+ ✓ |infra| src/infra/question-gateway-resolver.test.ts > resolveQuestionOverGateway > does not resolve an already-terminal record 14ms
+ ✓ |infra| src/infra/question-gateway-resolver.test.ts > resolveQuestionOverGateway > leaves option membership validation to question.resolve 18ms
+ ✓ |infra| src/infra/question-gateway-resolver.test.ts > resolveQuestionOverGateway > never partially resolves a multi-question record 12ms
+ ✓ |infra| src/infra/question-gateway-resolver.test.ts > resolveQuestionOverGateway > validates native custom input without resolving the question 9ms
+ ✓ |infra| src/infra/question-gateway-resolver.test.ts > getQuestionOverGateway > reads records without their answers and treats dropped records as missing 18ms
+
+ Test Files  1 passed (1)
+      Tests  10 passed (10)
+   Start at  23:20:10
+   Duration  43.37s (transform 85%, import 12%, setup 3%, tests 1%)
+
+[test] passed 1 Vitest shard in 51.51s

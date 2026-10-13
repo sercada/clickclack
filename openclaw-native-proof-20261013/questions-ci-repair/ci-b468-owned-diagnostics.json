@@ -1,0 +1,69 @@
+{
+  "classifiedAt": "2026-10-13T22:17:53.239447+00:00",
+  "head": "b468995c4a46354c8c48e907aa1fe78559125fd4",
+  "runId": 38472041108,
+  "rootLogReads": [
+    {
+      "job": 115554635232,
+      "path": "src/infra/question-gateway-resolver.ts:51",
+      "signature": "typescript(no-unnecessary-boolean-literal-compare)",
+      "diagnostics": 1,
+      "classification": "OWNED",
+      "repair": "strict switch with only primitive true; preserves fail-closed behavior"
+    },
+    {
+      "job": 115554635126,
+      "paths": [
+        "extensions/clickclack/src/questions.access.test.ts:65",
+        "extensions/clickclack/src/questions.access.test.ts:108",
+        "extensions/clickclack/src/questions.test.ts:628"
+      ],
+      "signature": "typescript(await-thenable)",
+      "diagnostics": 3,
+      "classification": "OWNED",
+      "repair": "remove await only from synchronous mocked fixture authorizers"
+    },
+    {
+      "job": 115554635168,
+      "paths": [
+        "src/infra/question-gateway-resolver.commit-guard.test.ts:85",
+        "src/infra/question-gateway-resolver.commit-guard.test.ts:201"
+      ],
+      "signature": "TS2345 handler possibly undefined / union promise inference",
+      "diagnostics": 2,
+      "classification": "OWNED",
+      "repair": "narrow real handler existence and use async identity callback"
+    }
+  ],
+  "totalOwnedDiagnostics": 6,
+  "newRepairTree": "d6dbe6a5900f365a35da5869974a70fcfa45f69d",
+  "newRepairStatus": "frozen and peer-reviewed; canonical/native replay/push pending",
+  "ciExceptionsGranted": false,
+  "rollupFailures": [
+    {
+      "name": "check-lint-core-4",
+      "conclusion": "FAILURE",
+      "url": "https://github.com/openclaw/openclaw/actions/runs/38472041108/job/115554635232"
+    },
+    {
+      "name": "check-lint-core-5",
+      "conclusion": "FAILURE",
+      "url": "https://github.com/openclaw/openclaw/actions/runs/38472041108/job/115554635126"
+    },
+    {
+      "name": "check-test-types-core-2",
+      "conclusion": "FAILURE",
+      "url": "https://github.com/openclaw/openclaw/actions/runs/38472041108/job/115554635168"
+    },
+    {
+      "name": "openclaw/ci-gate",
+      "conclusion": "FAILURE",
+      "url": "https://github.com/openclaw/openclaw/actions/runs/38472041108/job/115560739679"
+    },
+    {
+      "name": "openclaw/ci-gate",
+      "conclusion": "FAILURE",
+      "url": "https://github.com/openclaw/openclaw/actions/runs/38474220661"
+    }
+  ]
+}

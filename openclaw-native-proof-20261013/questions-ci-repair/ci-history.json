@@ -1,0 +1,17 @@
+{
+  "head": "b468995c4a46354c8c48e907aa1fe78559125fd4",
+  "url": "https://github.com/openclaw/openclaw/actions/runs/38472041108",
+  "status": "completed",
+  "rollup": {
+    "SUCCESS": 57,
+    "SKIP": 75,
+    "FAIL": 5,
+    "NEUTRAL": 1
+  },
+  "failures": "three native owner jobs and two aggregate gates",
+  "ownDiagnostics": 6,
+  "ciExceptionsGranted": false,
+  "repairHead": "1ad23a03371c2a8e79b51bf5862dec9aa037bef2",
+  "repairStatus": "four-path correction published; new exact-head CI remains separate",
+  "snapshotBoundary": "older frozen and peer records preserve preparation-time pending notes"
+}
