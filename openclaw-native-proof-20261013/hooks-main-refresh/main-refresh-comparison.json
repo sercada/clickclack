@@ -1,0 +1,239 @@
+{
+  "previousHead": "fa1ebae0029a8770f538a19ca75a61ec29b5706c",
+  "newHead": "dcb2f68513696bec474f97b0fe1755efa27ae170",
+  "actualMainParent": "c86d0f80023d8dc22dcd1f8ed1cc1b7271414336",
+  "repairAncestorVerified": true,
+  "authoredFootprintMatches": true,
+  "authoredChangedPaths": [
+    "docs/plugins/hooks/prompt-and-session.md",
+    "extensions/telegram/src/bot-message-context.media-carriers.test.ts",
+    "extensions/telegram/src/bot-message-context.prompt-context.test.ts",
+    "extensions/telegram/src/bot-message-context.session.ts",
+    "src/agents/cli-runner.ts",
+    "src/agents/cli-runner/before-agent-reply.ts",
+    "src/agents/cli-runner/causal-identity.test.ts",
+    "src/agents/cli-runner/prepare.test.ts",
+    "src/agents/cli-runner/prepare.ts",
+    "src/agents/command/shared-types.ts",
+    "src/agents/embedded-agent-runner/run/shared-run-context.ts",
+    "src/agents/harness/hook-context.ts",
+    "src/auto-reply/reply/agent-runner-run-params.ts",
+    "src/auto-reply/reply/get-reply-run-execute.ts",
+    "src/auto-reply/reply/get-reply.binding-route-owner.test.ts",
+    "src/auto-reply/reply/queue.causal-identity.test.ts",
+    "src/auto-reply/reply/queue/collected-run.ts",
+    "src/auto-reply/reply/queue/drain.ts",
+    "src/auto-reply/reply/queue/types.ts",
+    "src/auto-reply/reply/source-turn-id.test.ts",
+    "src/auto-reply/reply/source-turn-id.ts",
+    "src/plugins/hook-agent-context.test.ts",
+    "src/plugins/hook-agent-context.ts",
+    "src/plugins/hook-agent-context.types.ts"
+  ],
+  "originalStablePatchId": "2819941922b1d2496d2a4782d0b721b415c6c122",
+  "newStablePatchId": "2819941922b1d2496d2a4782d0b721b415c6c122",
+  "stablePatchIdMatches": true,
+  "rawPatchBytesMatch": false,
+  "authoredChangedLineBytesMatch": true,
+  "authoredChangedLineBytesSha256": "d7235dfb4307cc46f2c903a1688567e59b9e6f55dae3fc3c852968bcbd26ea7e",
+  "changedLineNormalization": "Preserves file identity and every added/deleted line byte; omits blob-ID headers and hunk line numbers only.",
+  "sourceInputUnchangedCount": 15,
+  "sourceInputChangedCount": 3,
+  "sourceInputs": [
+    {
+      "path": "extensions/telegram/src/bot-message-context.session.ts",
+      "oldBlob": "5c76d4bc36681e6ce032711a997b8759ece13d30",
+      "newBlob": "5c76d4bc36681e6ce032711a997b8759ece13d30",
+      "oldSha256": "d64016c4c5f10ebfb22035c17abdfeef959956616947c38d524416a58864b57e",
+      "newSha256": "d64016c4c5f10ebfb22035c17abdfeef959956616947c38d524416a58864b57e",
+      "unchanged": true
+    },
+    {
+      "path": "src/agents/cli-runner.ts",
+      "oldBlob": "8b0b465a062e805afc3e24ffb423f066b39b464b",
+      "newBlob": "4025cd7a942388a98845d87da6a9d25f50ac9e54",
+      "oldSha256": "8b3e54394fcc618927d20eccaaeb661d0f45a39cea6726ecdb9db82322df5b4a",
+      "newSha256": "a9b941f1b06281939497db7554ab8a96aa45021d628a941b54fb5ce5ec415a21",
+      "unchanged": false
+    },
+    {
+      "path": "src/agents/cli-runner/before-agent-reply.ts",
+      "oldBlob": "8abb5cf4f8e54c5c25e36e9593a6d9d8f351dd32",
+      "newBlob": "8abb5cf4f8e54c5c25e36e9593a6d9d8f351dd32",
+      "oldSha256": "edd96d25c5241f5f8ffc273d49f969b9b242b44ae6118fc23a4517277c9e4a02",
+      "newSha256": "edd96d25c5241f5f8ffc273d49f969b9b242b44ae6118fc23a4517277c9e4a02",
+      "unchanged": true
+    },
+    {
+      "path": "src/agents/cli-runner/prepare.ts",
+      "oldBlob": "079e1c3de33244a36e8e9fa74616760f3b9a5ac6",
+      "newBlob": "079e1c3de33244a36e8e9fa74616760f3b9a5ac6",
+      "oldSha256": "a3b6223078d8c05194f63d7a3e56151c04e4fc65e2157a34ef56698494c91e37",
+      "newSha256": "a3b6223078d8c05194f63d7a3e56151c04e4fc65e2157a34ef56698494c91e37",
+      "unchanged": true
+    },
+    {
+      "path": "src/agents/command/shared-types.ts",
+      "oldBlob": "11909510e2c2c1de2545e3599f8044dc8cc274ef",
+      "newBlob": "11909510e2c2c1de2545e3599f8044dc8cc274ef",
+      "oldSha256": "0355d4a8e9ea2068c88b2e92586701ba55283b680d1e40c6d442dba8419e7b0c",
+      "newSha256": "0355d4a8e9ea2068c88b2e92586701ba55283b680d1e40c6d442dba8419e7b0c",
+      "unchanged": true
+    },
+    {
+      "path": "src/agents/embedded-agent-runner/run/shared-run-context.ts",
+      "oldBlob": "6813cde8b78660598382bb760d81df7a7b2bf8ef",
+      "newBlob": "6813cde8b78660598382bb760d81df7a7b2bf8ef",
+      "oldSha256": "2fb758f55930f951c100b26de0b659770f5dacc89b0aa60c913681356430efff",
+      "newSha256": "2fb758f55930f951c100b26de0b659770f5dacc89b0aa60c913681356430efff",
+      "unchanged": true
+    },
+    {
+      "path": "src/agents/harness/hook-context.ts",
+      "oldBlob": "7b29911d8e7adcc0525aa4cf849e4faeeb8cd9d7",
+      "newBlob": "7b29911d8e7adcc0525aa4cf849e4faeeb8cd9d7",
+      "oldSha256": "58d68c4fe24b77b5bc97b157e7b99fa2af45d8678cd3758a98b54f6d893529b0",
+      "newSha256": "58d68c4fe24b77b5bc97b157e7b99fa2af45d8678cd3758a98b54f6d893529b0",
+      "unchanged": true
+    },
+    {
+      "path": "src/auto-reply/reply/agent-runner-run-params.ts",
+      "oldBlob": "4d42bc56bff6fd5ccdc6035e7a2a176e08e7a008",
+      "newBlob": "4d42bc56bff6fd5ccdc6035e7a2a176e08e7a008",
+      "oldSha256": "737205682889836162177afc5632eb2127a8b94d05a8b0e2a0f3fc8c0ae173d3",
+      "newSha256": "737205682889836162177afc5632eb2127a8b94d05a8b0e2a0f3fc8c0ae173d3",
+      "unchanged": true
+    },
+    {
+      "path": "src/auto-reply/reply/get-reply-run-execute.ts",
+      "oldBlob": "2eb2714b441703a243cefaf3f6c4a5b4b47651a2",
+      "newBlob": "4b1a94ca6dfd9a89028c7fa78ac623dcca9d00c0",
+      "oldSha256": "22043073b7c74584a99db743ffa4a66991afc9559f8be2f7e9d0b6d82d7670bb",
+      "newSha256": "085e71f71228c9fdf9d109bea26b1fd4c9de85d5114ad7168c7404fd381421c7",
+      "unchanged": false
+    },
+    {
+      "path": "src/auto-reply/reply/queue/collected-run.ts",
+      "oldBlob": "17e1d59aa4e260b821f8cd63d972541029f267ed",
+      "newBlob": "17e1d59aa4e260b821f8cd63d972541029f267ed",
+      "oldSha256": "077803a7dda841fa1b69cb2df47f60af59373d8323f3219c63776fcecb9f7320",
+      "newSha256": "077803a7dda841fa1b69cb2df47f60af59373d8323f3219c63776fcecb9f7320",
+      "unchanged": true
+    },
+    {
+      "path": "src/auto-reply/reply/queue/drain.ts",
+      "oldBlob": "519cd5c039385479b0c4d0a5b3739a999a4b90a1",
+      "newBlob": "519cd5c039385479b0c4d0a5b3739a999a4b90a1",
+      "oldSha256": "c5f6f42295d9c527e334da99d8e665d636be7c00895186f81889510175e0b414",
+      "newSha256": "c5f6f42295d9c527e334da99d8e665d636be7c00895186f81889510175e0b414",
+      "unchanged": true
+    },
+    {
+      "path": "src/auto-reply/reply/queue/types.ts",
+      "oldBlob": "412daed789a06a636ec991d1e5dd6194a6271013",
+      "newBlob": "fa981567243e60c2901ea9a5a9c42959d6045170",
+      "oldSha256": "cca263ea701cda90ed86eb322a949ad025934ca591c4fdce35564ce7cc24b555",
+      "newSha256": "76ef3f7d5d092282c17e68834370c26949f33ad5fb2fb2dcec32ad14bfa684d2",
+      "unchanged": false
+    },
+    {
+      "path": "src/auto-reply/reply/source-turn-id.ts",
+      "oldBlob": "7a2c1bfdf866d74140254c0e5eb2a05529d886ef",
+      "newBlob": "7a2c1bfdf866d74140254c0e5eb2a05529d886ef",
+      "oldSha256": "c621a05d226598de0ed5e3af06af5433c70b87bb6c25315e180c68f412626cb4",
+      "newSha256": "c621a05d226598de0ed5e3af06af5433c70b87bb6c25315e180c68f412626cb4",
+      "unchanged": true
+    },
+    {
+      "path": "src/plugins/hook-agent-context.ts",
+      "oldBlob": "30736913c31e5cfdfd6c719a6594a838aca29b98",
+      "newBlob": "30736913c31e5cfdfd6c719a6594a838aca29b98",
+      "oldSha256": "7748cbf72e8513896c967f9164f5040074d9c1f44bff227f0df56b46041cb585",
+      "newSha256": "7748cbf72e8513896c967f9164f5040074d9c1f44bff227f0df56b46041cb585",
+      "unchanged": true
+    },
+    {
+      "path": "src/plugins/hook-agent-context.types.ts",
+      "oldBlob": "0e086dbf6ab8ed70876fb2435b1178a81693af55",
+      "newBlob": "0e086dbf6ab8ed70876fb2435b1178a81693af55",
+      "oldSha256": "fb651e0db05d28ac24e6c8d757d7f6b2a996a6369530d140892c6ab27bb4a2ae",
+      "newSha256": "fb651e0db05d28ac24e6c8d757d7f6b2a996a6369530d140892c6ab27bb4a2ae",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/dev/tui-questions-proof.ts",
+      "oldBlob": "45f6197ab568b99a52b0bec6bc4f59b5992043bf",
+      "newBlob": "45f6197ab568b99a52b0bec6bc4f59b5992043bf",
+      "oldSha256": "faab6745576b3e1e1d7245624541a68e2e93ee82b38e671d464695dc8340101d",
+      "newSha256": "faab6745576b3e1e1d7245624541a68e2e93ee82b38e671d464695dc8340101d",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/e2e/mock-openai-server.mjs",
+      "oldBlob": "03d6247dc6659af5839dc361efb9f7374b50b57c",
+      "newBlob": "03d6247dc6659af5839dc361efb9f7374b50b57c",
+      "oldSha256": "478124da693194c4b016ab21c06b46626a1b895f2cb5c9e15249f4db5d548c11",
+      "newSha256": "478124da693194c4b016ab21c06b46626a1b895f2cb5c9e15249f4db5d548c11",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/lib/openclaw-bun.json",
+      "oldBlob": "1e5b58d6adbad0985272c1a18e0339048a858d0d",
+      "newBlob": "1e5b58d6adbad0985272c1a18e0339048a858d0d",
+      "oldSha256": "3b96b2c498610069767cc2c85d2faccbdafc0625eab2f5422013f7279f50fe4e",
+      "newSha256": "3b96b2c498610069767cc2c85d2faccbdafc0625eab2f5422013f7279f50fe4e",
+      "unchanged": true
+    }
+  ],
+  "fixtureInputs": [
+    {
+      "path": "drive-native.mjs",
+      "oldSha256": "790c0ed9264be8cad99b48145bd575a884862470421b67e82c091e50956f11a6",
+      "currentSha256": "790c0ed9264be8cad99b48145bd575a884862470421b67e82c091e50956f11a6",
+      "unchanged": true
+    },
+    {
+      "path": "native-plugin/index.mjs",
+      "oldSha256": "0fadd92c1ad7ff3399a32f9c661344085dbba46a5cee14f73c211905524c8f33",
+      "currentSha256": "0fadd92c1ad7ff3399a32f9c661344085dbba46a5cee14f73c211905524c8f33",
+      "unchanged": true
+    },
+    {
+      "path": "native-plugin/backend.mjs",
+      "oldSha256": "e734148801c44e3f12ae848760fa2557a280bf20634068ea66218ed254017757",
+      "currentSha256": "e734148801c44e3f12ae848760fa2557a280bf20634068ea66218ed254017757",
+      "unchanged": true
+    },
+    {
+      "path": "native-plugin/package.json",
+      "oldSha256": "eaa1897ce3dce9baae6a49e7a7b9fd747424c632593dc731b77f659259a4ce47",
+      "currentSha256": "eaa1897ce3dce9baae6a49e7a7b9fd747424c632593dc731b77f659259a4ce47",
+      "unchanged": true
+    },
+    {
+      "path": "native-plugin/openclaw.plugin.json",
+      "oldSha256": "77ee5e560f412f833218b2761c9266ca3592e2f8a047a990b17880de19e63178",
+      "currentSha256": "77ee5e560f412f833218b2761c9266ca3592e2f8a047a990b17880de19e63178",
+      "unchanged": true
+    }
+  ],
+  "workerContractMainVsHead": [
+    {
+      "path": "src/infra/worker-task-host.ts",
+      "mainBlob": "735867939d8708c975a7c2d9fc0be8c830c8dd4e",
+      "headBlob": "735867939d8708c975a7c2d9fc0be8c830c8dd4e"
+    },
+    {
+      "path": "src/infra/sqlite-database-admission.ts",
+      "mainBlob": "69b75bc1b62c104ba5c2ba2f03acc0a3c27e4bed",
+      "headBlob": "69b75bc1b62c104ba5c2ba2f03acc0a3c27e4bed"
+    },
+    {
+      "path": "packages/worker-runtime/src/worker-lifecycle.ts",
+      "mainBlob": "2bfb04a02c8cd52c4c3228595f95405d4a073a07",
+      "headBlob": "2bfb04a02c8cd52c4c3228595f95405d4a073a07"
+    }
+  ],
+  "mainRepairCommit": "728f8c6c8881ac012559a67093742aec3dfa0478",
+  "currentHeadRuntimeReplayed": true
+}

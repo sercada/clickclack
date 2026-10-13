@@ -1,0 +1,22 @@
+{
+  "candidateCommit": "dcb2f68513696bec474f97b0fe1755efa27ae170",
+  "fixtureSha256": {
+    "drive-native.mjs": "790c0ed9264be8cad99b48145bd575a884862470421b67e82c091e50956f11a6",
+    "native-plugin/index.mjs": "0fadd92c1ad7ff3399a32f9c661344085dbba46a5cee14f73c211905524c8f33",
+    "native-plugin/backend.mjs": "e734148801c44e3f12ae848760fa2557a280bf20634068ea66218ed254017757",
+    "native-plugin/package.json": "eaa1897ce3dce9baae6a49e7a7b9fd747424c632593dc731b77f659259a4ce47",
+    "native-plugin/openclaw.plugin.json": "77ee5e560f412f833218b2761c9266ca3592e2f8a047a990b17880de19e63178"
+  },
+  "fixturesChanged": false,
+  "sourcePinMatches": true,
+  "bunRevision": "1.4.3-canary.1+65d94e715",
+  "bunExecutableSha256": "a74610af94648d54fa2312f319258a8821b509948d9dd9d6eb5f577e78a470e4",
+  "sourceInputCount": 18,
+  "sourceInputUnchangedFromFa1": 15,
+  "sourceInputChangedFromFa1": [
+    "src/agents/cli-runner.ts",
+    "src/auto-reply/reply/get-reply-run-execute.ts",
+    "src/auto-reply/reply/queue/types.ts"
+  ],
+  "reasonForReplay": "Main changed3 producer inputs; a fresh native Gateway replay was needed and completed."
+}

@@ -1,0 +1,123 @@
+{
+  "snapshotAt": "2026-10-13T21:31:49.373741+00:00",
+  "candidateCommit": "dcb2f68513696bec474f97b0fe1755efa27ae170",
+  "observedRunCommit": "dcb2f68513696bec474f97b0fe1755efa27ae170",
+  "currentContributionCommit": "6d2ee6a237724d7c9959dc76d58e6eb699cd2e32",
+  "runId": 38463785609,
+  "runAttempt": 1,
+  "workflowPath": ".github/workflows/ci.yml",
+  "event": "pull_request",
+  "status": "completed",
+  "conclusion": "failure",
+  "url": "https://github.com/openclaw/openclaw/actions/runs/38463785609",
+  "runHeadMatchesH": true,
+  "classification": "Two owned test diagnostics repaired by the current successor; Gateway chat timeout UNKNOWN.",
+  "ownedFailuresRepairedByCommit": "6d2ee6a237724d7c9959dc76d58e6eb699cd2e32",
+  "positiveEvidence": [
+    {
+      "name": "build-artifacts",
+      "jobId": 115530733098,
+      "conclusion": "success",
+      "originCommit": "dcb2f68513696bec474f97b0fe1755efa27ae170",
+      "evidence": "Root verified native job metadata."
+    },
+    {
+      "name": "check-prod-types",
+      "jobId": 115532047173,
+      "conclusion": "success",
+      "originCommit": "dcb2f68513696bec474f97b0fe1755efa27ae170",
+      "evidence": "Root verified native job metadata."
+    },
+    {
+      "testFile": "src/auto-reply/reply/queue.causal-identity.test.ts",
+      "passed": 7,
+      "failed": 0,
+      "jobId": 115530735682,
+      "originCommit": "dcb2f68513696bec474f97b0fe1755efa27ae170",
+      "evidence": "Root verified seven individual passing cases in native log at 20:55:11 UTC."
+    },
+    {
+      "testFile": "src/agents/cli-runner/causal-identity.test.ts",
+      "passed": 3,
+      "failed": 0,
+      "ownerStates": [
+        true,
+        false,
+        "omitted"
+      ],
+      "jobId": 115530735682,
+      "originCommit": "dcb2f68513696bec474f97b0fe1755efa27ae170",
+      "evidence": "Root verified true/false/undefined passing cases in native log at 20:55:10 UTC."
+    },
+    {
+      "names": [
+        "check-test-types-core-1",
+        "check-test-types-core-3",
+        "check-test-types-core-4",
+        "check-test-types-core-5",
+        "check-test-types"
+      ],
+      "conclusion": "success",
+      "originCommit": "dcb2f68513696bec474f97b0fe1755efa27ae170",
+      "evidence": "Root verified native job metadata; no test-type core-2 pass is claimed."
+    }
+  ],
+  "failures": [
+    {
+      "jobId": 115532047092,
+      "diagnostic": "eslint(curly)",
+      "testFile": "src/auto-reply/reply/queue.causal-identity.test.ts",
+      "line": 25,
+      "classification": "OWNED",
+      "repairCommit": "6d2ee6a237724d7c9959dc76d58e6eb699cd2e32"
+    },
+    {
+      "jobId": 115532047158,
+      "name": "check-test-types-core-2",
+      "diagnostic": "TS2345: required sessionFile missing in RunCliAgentParams fixture at both calls",
+      "testFile": "src/agents/cli-runner/causal-identity.test.ts",
+      "lines": [
+        56,
+        93
+      ],
+      "classification": "OWNED",
+      "repairCommit": "6d2ee6a237724d7c9959dc76d58e6eb699cd2e32"
+    },
+    {
+      "jobId": 115530735682,
+      "name": "checks-node-changed-compact-small-10",
+      "selector": "agentic-control-plane-agent-chat-hosted-2",
+      "testFile": "src/gateway/server.chat.gateway-server-chat.test.ts",
+      "testName": "chat.send fences the admitted session settings",
+      "diagnostic": "Gateway RPC timeout at onceMessage:675 / rpcReq:1254 / test:251",
+      "testFilePassed": 33,
+      "testFileFailed": 1,
+      "classification": "UNKNOWN",
+      "reason": "Latest successful main run 38467145447 skipped relevant Node/check-plan/ci-gate selectors; no comparable main execution was found."
+    }
+  ],
+  "initialInventoryObservationPreserved": {
+    "candidateCommit": "dcb2f68513696bec474f97b0fe1755efa27ae170",
+    "snapshotAt": "2026-10-13T20:57:44.904282+00:00",
+    "runId": 38463785609,
+    "runAttempt": 1,
+    "workflowPath": ".github/workflows/ci.yml",
+    "event": "pull_request",
+    "status": "in_progress",
+    "conclusion": null,
+    "url": "https://github.com/openclaw/openclaw/actions/runs/38463785609",
+    "headMatches": true,
+    "classification": "UNKNOWN",
+    "nativeCommand": "pnpm test:ci-failed 124557 --repo openclaw/openclaw --json",
+    "nativeCommandResult": "Jobs inventory unavailable: GitHub HTTP502",
+    "directReadResult": "Run identity verified; one direct jobs read also returned HTTP502",
+    "jobsEndpointFailureCount": 2,
+    "ciRerunRequested": false,
+    "moreInventoryRetriesStopped": true,
+    "currentHeadBroadSuiteOrTypesOrLintPassNotClaimed": true
+  },
+  "exactCurrentHeadCiStatus": "Not observed by this agent; native new-head CI is required.",
+  "currentHeadBroadSuiteOrTypesOrLintPassNotClaimed": true,
+  "noCiRerunRequested": true,
+  "noRawLogsIncluded": true
+}

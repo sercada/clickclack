@@ -1,0 +1,14 @@
+{
+  "candidateCommit": "dcb2f68513696bec474f97b0fe1755efa27ae170",
+  "actualMainParent": "c86d0f80023d8dc22dcd1f8ed1cc1b7271414336",
+  "mode": "branch",
+  "engine": "codex",
+  "maxPriority": "P2",
+  "status": "scoped-clean",
+  "exitCode": 0,
+  "reportProduced": true,
+  "findings": [],
+  "overallCorrectness": "patch is correct",
+  "overallExplanation": "No P0\u2013P2 defects are supported by the supplied committed diff and source context. Causal identity remains separate from reply routing, multi-source work withholds causal IDs, and ownership metadata preserves true/false/absent values behind explicit user and non-synthetic guards. The supplied embedded dispatch forwards the new field through the shared projection. Current-HEAD CI, types, lint, owner SDK/security acceptance, and the new Gateway replay remain unverified; historical receipts do not establish that they pass.",
+  "scope": "P to HEAD authored24; included committed embedded dispatch source. Native replay happened after this review. Owner acceptance is not granted by review."
+}

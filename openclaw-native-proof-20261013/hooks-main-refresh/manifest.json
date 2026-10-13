@@ -1,0 +1,46 @@
+{
+  "bundle": "hooks-main-refresh",
+  "contributionHead": "6d2ee6a237724d7c9959dc76d58e6eb699cd2e32",
+  "files": [
+    {
+      "file": "README.md",
+      "sha256": "13813e276e2d445d93efac272121155d3b2fe5a3d28eec0b0e7a83f65e3e01a0",
+      "bytes": 5553
+    },
+    {
+      "file": "canonical-p2-review.json",
+      "sha256": "c4dad0e9f2fe5f819696cab5ce79fe4db5f822f58122e012c63177bf66dac3c5",
+      "bytes": 1054
+    },
+    {
+      "file": "ci-observation.json",
+      "sha256": "9dc3c5bf0ffc903650074a5d8a4dfeca1fe40b6cdebbb6006544fae29a6162bc",
+      "bytes": 4732
+    },
+    {
+      "file": "fixture-binding.json",
+      "sha256": "031726d60d11558054db38ba6a82219de06c9fa75ee3515c327dfddb77ec4eba",
+      "bytes": 1130
+    },
+    {
+      "file": "historical-producer-tests.json",
+      "sha256": "4e8851ce9cf91c6d641dcc93c3cb504e6ee8b7a7905efe514df340a7b238cbb9",
+      "bytes": 648
+    },
+    {
+      "file": "main-refresh-comparison.json",
+      "sha256": "df040bb7f9dfa960d439f8299e17c125326d97ef6886c2a76dcbcc517ae5bf67",
+      "bytes": 11139
+    },
+    {
+      "file": "native-gateway-12-cases.json",
+      "sha256": "63b20417c854e3b8b16330c4f043cc8493fb49a0c94f6c0ea1d5e9ae2139cef2",
+      "bytes": 24863
+    },
+    {
+      "file": "test-only-successor.json",
+      "sha256": "a91f640542bbe0ad297cc4965d3d5107fbe817a1fb2d68a7216c705691813277",
+      "bytes": 11574
+    }
+  ]
+}

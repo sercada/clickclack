@@ -1,0 +1,19 @@
+{
+  "candidateCommit": "dcb2f68513696bec474f97b0fe1755efa27ae170",
+  "historicalHead": "fa1ebae0029a8770f538a19ca75a61ec29b5706c",
+  "registeredProjectionRegression": {
+    "passed": 3,
+    "currentHeadReplay": false
+  },
+  "cliPrepareProducerRegression": {
+    "passed": 4,
+    "currentHeadReplay": false
+  },
+  "replyBindingProducerRegression": {
+    "passed": 2,
+    "planned": 4,
+    "complete": false,
+    "currentHeadReplay": false
+  },
+  "note": "Historical producer unit receipts remain at fa1. This pack adds a new12-case native replay on H; it does not convert historical units, prior build, or prior-head CI into current-head checks."
+}
