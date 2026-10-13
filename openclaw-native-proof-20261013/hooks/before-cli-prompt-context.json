@@ -1,0 +1,507 @@
+{
+  "sourceHead": "f8cad0fc7141936842d71b0d92fd952f573653b2",
+  "runtimeTrackedDiffSha256": "64dbcfc3d104349a1e073a9eda9d1b87cb4cb369e4545c86e7fdc9e6dd8f19e9",
+  "sourceChange": "Embedded attempt projection repaired; CLI prompt preparation still at its original bytes.",
+  "engine": {
+    "name": "pinned OpenClaw Bun",
+    "revision": "1.4.3-canary.1+65d94e715",
+    "executableSha256": "a74610af94648d54fa2312f319258a8821b509948d9dd9d6eb5f577e78a470e4"
+  },
+  "passed": false,
+  "failure": "All 6 embedded cases passed. Real CLI owner before_agent_run had the ID and ownership, but before_prompt_build omitted both fields.",
+  "observations": [
+    {
+      "status": 200,
+      "fixture": "main/owner",
+      "input": {
+        "messageId": "msg-owner",
+        "messageIdFull": "messages/owner/inbound",
+        "threadId": "threads/owner/reply",
+        "replyToId": "prior-owner",
+        "sourceIds": null
+      },
+      "hookOutputs": [
+        {
+          "messageIdPresent": true,
+          "messageId": "messages/owner/inbound",
+          "senderIsOwnerPresent": true,
+          "senderIsOwner": true,
+          "senderId": "owner",
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "promptOutputs": [
+        {
+          "messageIdPresent": true,
+          "messageId": "messages/owner/inbound",
+          "senderIsOwnerPresent": true,
+          "senderIsOwner": true,
+          "senderId": "owner",
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "earlyOutputs": [
+        {
+          "messageIdPresent": true,
+          "messageId": "messages/owner/inbound",
+          "senderIsOwnerPresent": true,
+          "senderIsOwner": true,
+          "senderId": "owner",
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "threadingOutputs": [
+        {
+          "inbound": "messages/owner/inbound",
+          "currentMessageId": "threads/owner/reply"
+        },
+        {
+          "inbound": "messages/owner/inbound",
+          "currentMessageId": "threads/owner/reply"
+        },
+        {
+          "inbound": "messages/owner/inbound",
+          "currentMessageId": "threads/owner/reply"
+        },
+        {
+          "inbound": "messages/owner/inbound",
+          "currentMessageId": "threads/owner/reply"
+        }
+      ],
+      "delivered": [
+        "NATIVE_CAUSAL_FINAL"
+      ]
+    },
+    {
+      "status": 200,
+      "fixture": "main/non-owner",
+      "input": {
+        "messageId": "msg-non-owner",
+        "messageIdFull": "messages/non-owner/inbound",
+        "threadId": "threads/non-owner/reply",
+        "replyToId": "prior-non-owner",
+        "sourceIds": null
+      },
+      "hookOutputs": [
+        {
+          "messageIdPresent": true,
+          "messageId": "messages/non-owner/inbound",
+          "senderIsOwnerPresent": true,
+          "senderIsOwner": false,
+          "senderId": "visitor",
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "promptOutputs": [
+        {
+          "messageIdPresent": true,
+          "messageId": "messages/non-owner/inbound",
+          "senderIsOwnerPresent": true,
+          "senderIsOwner": false,
+          "senderId": "visitor",
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "earlyOutputs": [
+        {
+          "messageIdPresent": true,
+          "messageId": "messages/non-owner/inbound",
+          "senderIsOwnerPresent": true,
+          "senderIsOwner": false,
+          "senderId": "visitor",
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "threadingOutputs": [
+        {
+          "inbound": "messages/non-owner/inbound",
+          "currentMessageId": "threads/non-owner/reply"
+        },
+        {
+          "inbound": "messages/non-owner/inbound",
+          "currentMessageId": "threads/non-owner/reply"
+        },
+        {
+          "inbound": "messages/non-owner/inbound",
+          "currentMessageId": "threads/non-owner/reply"
+        },
+        {
+          "inbound": "messages/non-owner/inbound",
+          "currentMessageId": "threads/non-owner/reply"
+        }
+      ],
+      "delivered": [
+        "NATIVE_CAUSAL_FINAL"
+      ]
+    },
+    {
+      "status": 200,
+      "fixture": "main/unknown",
+      "input": {
+        "messageId": "msg-unknown",
+        "messageIdFull": "messages/unknown/inbound",
+        "threadId": "threads/unknown/reply",
+        "replyToId": "prior-unknown",
+        "sourceIds": null
+      },
+      "hookOutputs": [
+        {
+          "messageIdPresent": true,
+          "messageId": "messages/unknown/inbound",
+          "senderIsOwnerPresent": false,
+          "senderIsOwner": null,
+          "senderId": null,
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "promptOutputs": [
+        {
+          "messageIdPresent": true,
+          "messageId": "messages/unknown/inbound",
+          "senderIsOwnerPresent": false,
+          "senderIsOwner": null,
+          "senderId": null,
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "earlyOutputs": [
+        {
+          "messageIdPresent": true,
+          "messageId": "messages/unknown/inbound",
+          "senderIsOwnerPresent": false,
+          "senderIsOwner": null,
+          "senderId": null,
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "threadingOutputs": [
+        {
+          "inbound": "messages/unknown/inbound",
+          "currentMessageId": "threads/unknown/reply"
+        },
+        {
+          "inbound": "messages/unknown/inbound",
+          "currentMessageId": "threads/unknown/reply"
+        },
+        {
+          "inbound": "messages/unknown/inbound",
+          "currentMessageId": "threads/unknown/reply"
+        },
+        {
+          "inbound": "messages/unknown/inbound",
+          "currentMessageId": "threads/unknown/reply"
+        }
+      ],
+      "delivered": [
+        "NATIVE_CAUSAL_FINAL"
+      ]
+    },
+    {
+      "status": 200,
+      "fixture": "main/batch",
+      "input": {
+        "messageId": "msg-batch",
+        "messageIdFull": "messages/batch/inbound",
+        "threadId": "threads/batch/reply",
+        "replyToId": "prior-batch",
+        "sourceIds": [
+          "msg-batch-first",
+          "msg-batch"
+        ]
+      },
+      "hookOutputs": [
+        {
+          "messageIdPresent": false,
+          "messageId": null,
+          "senderIsOwnerPresent": true,
+          "senderIsOwner": true,
+          "senderId": "owner",
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "promptOutputs": [
+        {
+          "messageIdPresent": false,
+          "messageId": null,
+          "senderIsOwnerPresent": true,
+          "senderIsOwner": true,
+          "senderId": "owner",
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "earlyOutputs": [
+        {
+          "messageIdPresent": false,
+          "messageId": null,
+          "senderIsOwnerPresent": true,
+          "senderIsOwner": true,
+          "senderId": "owner",
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "threadingOutputs": [
+        {
+          "inbound": "messages/batch/inbound",
+          "currentMessageId": "threads/batch/reply"
+        },
+        {
+          "inbound": "messages/batch/inbound",
+          "currentMessageId": "threads/batch/reply"
+        },
+        {
+          "inbound": "messages/batch/inbound",
+          "currentMessageId": "threads/batch/reply"
+        },
+        {
+          "inbound": "messages/batch/inbound",
+          "currentMessageId": "threads/batch/reply"
+        }
+      ],
+      "delivered": [
+        "NATIVE_CAUSAL_FINAL"
+      ]
+    },
+    {
+      "status": 200,
+      "fixture": "main/repeated",
+      "input": {
+        "messageId": "msg-repeated",
+        "messageIdFull": "messages/repeated/inbound",
+        "threadId": "threads/repeated/reply",
+        "replyToId": "prior-repeated",
+        "sourceIds": [
+          "msg-repeated",
+          "msg-repeated"
+        ]
+      },
+      "hookOutputs": [
+        {
+          "messageIdPresent": true,
+          "messageId": "messages/repeated/inbound",
+          "senderIsOwnerPresent": true,
+          "senderIsOwner": false,
+          "senderId": "visitor",
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "promptOutputs": [
+        {
+          "messageIdPresent": true,
+          "messageId": "messages/repeated/inbound",
+          "senderIsOwnerPresent": true,
+          "senderIsOwner": false,
+          "senderId": "visitor",
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "earlyOutputs": [
+        {
+          "messageIdPresent": true,
+          "messageId": "messages/repeated/inbound",
+          "senderIsOwnerPresent": true,
+          "senderIsOwner": false,
+          "senderId": "visitor",
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "threadingOutputs": [
+        {
+          "inbound": "messages/repeated/inbound",
+          "currentMessageId": "threads/repeated/reply"
+        },
+        {
+          "inbound": "messages/repeated/inbound",
+          "currentMessageId": "threads/repeated/reply"
+        },
+        {
+          "inbound": "messages/repeated/inbound",
+          "currentMessageId": "threads/repeated/reply"
+        },
+        {
+          "inbound": "messages/repeated/inbound",
+          "currentMessageId": "threads/repeated/reply"
+        }
+      ],
+      "delivered": [
+        "NATIVE_CAUSAL_FINAL"
+      ]
+    },
+    {
+      "status": 200,
+      "fixture": "main/synthetic",
+      "input": {
+        "messageId": "msg-synthetic",
+        "messageIdFull": "messages/synthetic/inbound",
+        "threadId": "threads/synthetic/reply",
+        "replyToId": "prior-synthetic",
+        "sourceIds": null
+      },
+      "hookOutputs": [
+        {
+          "messageIdPresent": false,
+          "messageId": null,
+          "senderIsOwnerPresent": false,
+          "senderIsOwner": null,
+          "senderId": "owner",
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "promptOutputs": [
+        {
+          "messageIdPresent": false,
+          "messageId": null,
+          "senderIsOwnerPresent": false,
+          "senderIsOwner": null,
+          "senderId": "owner",
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "earlyOutputs": [
+        {
+          "messageIdPresent": false,
+          "messageId": null,
+          "senderIsOwnerPresent": false,
+          "senderIsOwner": null,
+          "senderId": "owner",
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "threadingOutputs": [
+        {
+          "inbound": "messages/synthetic/inbound",
+          "currentMessageId": "threads/synthetic/reply"
+        },
+        {
+          "inbound": "messages/synthetic/inbound",
+          "currentMessageId": "threads/synthetic/reply"
+        },
+        {
+          "inbound": "messages/synthetic/inbound",
+          "currentMessageId": "threads/synthetic/reply"
+        },
+        {
+          "inbound": "messages/synthetic/inbound",
+          "currentMessageId": "threads/synthetic/reply"
+        }
+      ],
+      "delivered": [
+        "NATIVE_CAUSAL_FINAL"
+      ]
+    },
+    {
+      "status": 200,
+      "fixture": "cli/owner",
+      "input": {
+        "messageId": "msg-owner",
+        "messageIdFull": "messages/owner/inbound",
+        "threadId": "threads/owner/reply",
+        "replyToId": "prior-owner",
+        "sourceIds": null
+      },
+      "hookOutputs": [
+        {
+          "messageIdPresent": true,
+          "messageId": "messages/owner/inbound",
+          "senderIsOwnerPresent": true,
+          "senderIsOwner": true,
+          "senderId": "owner",
+          "channel": "causal-hook-proof",
+          "agentId": "cli",
+          "trigger": "user"
+        }
+      ],
+      "promptOutputs": [
+        {
+          "messageIdPresent": false,
+          "messageId": null,
+          "senderIsOwnerPresent": false,
+          "senderIsOwner": null,
+          "senderId": "owner",
+          "channel": "causal-hook-proof",
+          "agentId": "cli",
+          "trigger": "user"
+        }
+      ],
+      "earlyOutputs": [
+        {
+          "messageIdPresent": true,
+          "messageId": "messages/owner/inbound",
+          "senderIsOwnerPresent": true,
+          "senderIsOwner": true,
+          "senderId": "owner",
+          "channel": "causal-hook-proof",
+          "agentId": "cli",
+          "trigger": "user"
+        }
+      ],
+      "threadingOutputs": [
+        {
+          "inbound": "messages/owner/inbound",
+          "currentMessageId": "threads/owner/reply"
+        },
+        {
+          "inbound": "messages/owner/inbound",
+          "currentMessageId": "threads/owner/reply"
+        },
+        {
+          "inbound": "messages/owner/inbound",
+          "currentMessageId": "threads/owner/reply"
+        },
+        {
+          "inbound": "messages/owner/inbound",
+          "currentMessageId": "threads/owner/reply"
+        }
+      ],
+      "delivered": [
+        "NATIVE_CAUSAL_FINAL"
+      ]
+    }
+  ],
+  "modelRequests": 6,
+  "cliCompletedSpawnRecords": [
+    {
+      "pid": 1907817,
+      "final": "NATIVE_CAUSAL_FINAL"
+    }
+  ],
+  "gatewayExit": {
+    "code": 0,
+    "signal": null
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "schema_version": 1,
+  "pr": "https://github.com/openclaw/openclaw/pull/141457",
+  "candidate_head": "3fd161fbc74912345a874baa7852e955a2ba3581",
+  "unchanged_production_head": "68d716b92f270521bc416c0a0ac9546ae9711ebe",
+  "companion_head": "2eabd69dfd4b81ceef226409a3190f13782d7e49",
+  "runtime_engine": {
+    "kind": "repository-pinned OpenClaw Bun fork",
+    "tag": "openclaw-v1.4.3-20261010-65d94e7156-webkit-01f208ae7a-r2",
+    "revision": "1.4.3-canary.1+65d94e715",
+    "commit": "65d94e7156da4b6aca649dac5f19b8294b757570",
+    "binary_sha256": "a74610af94648d54fa2312f319258a8821b509948d9dd9d6eb5f577e78a470e4",
+    "source_pin_matches_manifest": true
+  },
+  "production_blob_identity": {
+    "changedFilesSince68": [
+      "src/media/fetch.test.ts"
+    ],
+    "blobs": [
+      {
+        "path": "extensions/clickclack",
+        "before": "3db24dfc3141a369b43ca5efe8f75cc4f3522a24",
+        "after": "3db24dfc3141a369b43ca5efe8f75cc4f3522a24"
+      },
+      {
+        "path": "src/media/fetch.ts",
+        "before": "3d15de2742e3da40c5d98360a322d9fd6db07ddd",
+        "after": "3d15de2742e3da40c5d98360a322d9fd6db07ddd"
+      },
+      {
+        "path": "src/plugin-sdk/media-runtime.ts",
+        "before": "86c3df82a44a2fb968b9b0a699fead0091b2b258",
+        "after": "86c3df82a44a2fb968b9b0a699fead0091b2b258"
+      }
+    ]
+  },
+  "completed_cases": [
+    {
+      "name": "allowed-native-image-download-and-managed-store",
+      "at": "2026-10-13T18:49:43.758Z",
+      "messageId": "msg_01m4v9jp6yeej2eh0qzkcqd9td",
+      "sourceSha256": "65deda782bef8ddd50b7e5d3d426fbcfafa4d9ac63bb0e56675b6b46893d51c9",
+      "sourceBytes": 68,
+      "nativeUploadStatus": 200,
+      "managedFileHasIdenticalBytes": true
+    },
+    {
+      "name": "allowed-image-provider-and-store",
+      "at": "2026-10-13T18:50:12.979Z",
+      "messageId": "msg_01m4v9jp6yeej2eh0qzkcqd9td",
+      "uploadGetCount": 1,
+      "providerImageCount": 1,
+      "providerCursor": 1,
+      "sourceBytes": 68,
+      "sourceSha256": "65deda782bef8ddd50b7e5d3d426fbcfafa4d9ac63bb0e56675b6b46893d51c9",
+      "managedFileHasIdenticalBytes": true
+    },
+    {
+      "name": "unadmitted-no-download-publication-or-provider",
+      "at": "2026-10-13T19:16:34.958Z",
+      "senderId": "usr_01m4vb2hcvggdms7x30cmnxttf",
+      "initialAllowFrom": [
+        "usr_isolated_other_fixture"
+      ],
+      "nativeMessageLookupObserved": true,
+      "uploadGets": 0,
+      "providerRequests": 0,
+      "newFiles": 0
+    },
+    {
+      "name": "account-retired-during-stream-no-final-publication",
+      "at": "2026-10-13T19:20:27.236Z",
+      "phase": "revoked-stream",
+      "upstreamStatus": 200,
+      "firstChunkBytes": 512,
+      "retirementOwner": "native channels.stop RPC; account AbortSignal/lifetime retirement",
+      "websocketClosedAt": "2026-10-13T19:20:26.432Z",
+      "channelStopped": true,
+      "accountRunningAfterStop": false,
+      "configPolicyChanged": false,
+      "messageId": "msg_01m4vbavrs09q30r06qzkppagr",
+      "temporaryBytesObserved": 512,
+      "finalNewFiles": 0,
+      "providerRequests": 0,
+      "botReplies": 0
+    },
+    {
+      "name": "account-retired-during-awaited-dm-preparation-zero-notice-post",
+      "at": "2026-10-13T19:20:29.805Z",
+      "phase": "revoked-dm-preparation",
+      "upstreamStatus": 201,
+      "retirementOwner": "native channels.stop RPC; account AbortSignal/lifetime retirement",
+      "websocketClosedAt": "2026-10-13T19:20:28.182Z",
+      "channelStopped": true,
+      "accountRunningAfterStop": false,
+      "configPolicyChanged": false,
+      "messageId": "msg_01m4vbb14r31sry10pbnc7qdr5",
+      "finalNoticePosts": 0,
+      "botReplies": 0,
+      "providerRequests": 0,
+      "newFiles": 0
+    },
+    {
+      "name": "native-404-terminal-notice-and-next-event",
+      "at": "2026-10-13T19:20:48.351Z",
+      "missingMessageId": "msg_01m4vbb3sfvg04671j50ggxfv7",
+      "nextMessageId": "msg_01m4vbb3ssnb61q7ed7922btdy",
+      "noticeMessageId": "msg_01m4vbb4exzqrwa1z5ynsz3bmw",
+      "nativeUploadStatus": 404,
+      "followingEventProcessed": true
+    },
+    {
+      "name": "one-503-cursor-replay-recovers-on-native-server",
+      "at": "2026-10-13T19:20:53.528Z",
+      "messageId": "msg_01m4vbbn0prw5hjf8vbppzrst4",
+      "uploadStatuses": [
+        503,
+        200
+      ],
+      "durableReplies": 1,
+      "reconnects": []
+    }
+  ],
+  "run_receipts": {
+    "allowed": {
+      "candidate_head": "68d716b92f270521bc416c0a0ac9546ae9711ebe",
+      "started_at": "2026-10-13T18:48:44.895Z",
+      "finished_at": "2026-10-13T18:50:23.046Z",
+      "engine": {
+        "kind": "pinned OpenClaw Bun fork",
+        "version": "1.4.3",
+        "revision": "65d94e7156da4b6aca649dac5f19b8294b757570"
+      },
+      "gateway_identity": {
+        "sourceHead": "68d716b92f270521bc416c0a0ac9546ae9711ebe",
+        "launcher": "maintained scripts/dev/tui-questions-proof.ts --gateway-child",
+        "protocol": 4,
+        "version": "2026.10.2",
+        "bootId": "e49b3078-2a45-450f-bfff-ed41bc01cad7"
+      },
+      "raw_receipt_sha256": "c31142c148c328968887035e2c766b15c33e42e9086a031d35fdc57753674daa",
+      "overall_run_passed": false,
+      "completed_checks": [
+        {
+          "name": "allowed-native-image-download-and-managed-store",
+          "at": "2026-10-13T18:49:43.758Z",
+          "messageId": "msg_01m4v9jp6yeej2eh0qzkcqd9td",
+          "sourceSha256": "65deda782bef8ddd50b7e5d3d426fbcfafa4d9ac63bb0e56675b6b46893d51c9",
+          "sourceBytes": 68,
+          "nativeUploadStatus": 200,
+          "managedFileHasIdenticalBytes": true
+        },
+        {
+          "name": "allowed-image-provider-and-store",
+          "at": "2026-10-13T18:50:12.979Z",
+          "messageId": "msg_01m4v9jp6yeej2eh0qzkcqd9td",
+          "uploadGetCount": 1,
+          "providerImageCount": 1,
+          "providerCursor": 1,
+          "sourceBytes": 68,
+          "sourceSha256": "65deda782bef8ddd50b7e5d3d426fbcfafa4d9ac63bb0e56675b6b46893d51c9",
+          "managedFileHasIdenticalBytes": true
+        }
+      ],
+      "cleanup_errors": [],
+      "fixture_resources_joined": true,
+      "later_fixture_failure": {
+        "phase": "unadmitted",
+        "name": "GatewayClientRequestError",
+        "message": "config.patch would remove entries from array path(s): channels.clickclack.allowFrom. Pass replacePaths with the exact path(s) when this is intentional, or use config.apply for full-config replacement."
+      },
+      "scope_note": "Both admitted image checks completed successfully; the later configuration-mutation fixture failed and does not invalidate or enlarge those completed checks."
+    },
+    "denied": {
+      "candidate_head": "3fd161fbc74912345a874baa7852e955a2ba3581",
+      "started_at": "2026-10-13T19:15:48.221Z",
+      "finished_at": "2026-10-13T19:16:38.727Z",
+      "engine": {
+        "kind": "pinned OpenClaw Bun fork",
+        "version": "1.4.3",
+        "revision": "65d94e7156da4b6aca649dac5f19b8294b757570"
+      },
+      "gateway_identity": {
+        "sourceHead": "3fd161fbc74912345a874baa7852e955a2ba3581",
+        "launcher": "production CLI runGatewayLoop + startGatewayServer + prepareHostConfigSnapshot",
+        "protocol": 4,
+        "version": "2026.10.2",
+        "bootId": "547d8206-d90c-4580-a453-faf1cae991ea"
+      },
+      "raw_receipt_sha256": "83fb0e713adb857f830eeb9c1c1c0868b1e86306273feb887c331c71c1f2049c",
+      "overall_run_passed": true,
+      "completed_checks": [
+        {
+          "name": "unadmitted-no-download-publication-or-provider",
+          "at": "2026-10-13T19:16:34.958Z",
+          "senderId": "usr_01m4vb2hcvggdms7x30cmnxttf",
+          "initialAllowFrom": [
+            "usr_isolated_other_fixture"
+          ],
+          "nativeMessageLookupObserved": true,
+          "uploadGets": 0,
+          "providerRequests": 0,
+          "newFiles": 0
+        }
+      ],
+      "cleanup_errors": [],
+      "fixture_resources_joined": true
+    },
+    "retirement_retry": {
+      "candidate_head": "3fd161fbc74912345a874baa7852e955a2ba3581",
+      "started_at": "2026-10-13T19:19:25.936Z",
+      "finished_at": "2026-10-13T19:20:56.268Z",
+      "engine": {
+        "kind": "pinned OpenClaw Bun fork",
+        "version": "1.4.3",
+        "revision": "65d94e7156da4b6aca649dac5f19b8294b757570"
+      },
+      "gateway_identity": {
+        "sourceHead": "3fd161fbc74912345a874baa7852e955a2ba3581",
+        "launcher": "production CLI runGatewayLoop + startGatewayServer + prepareHostConfigSnapshot",
+        "protocol": 4,
+        "version": "2026.10.2",
+        "bootId": "238c0c75-9bb5-402c-b31a-761e4b15fd74"
+      },
+      "raw_receipt_sha256": "2748f26c8a36718ee0d04ec60a1c6d4a240b5abc619abfc6f29d54bee10a144c",
+      "overall_run_passed": true,
+      "completed_checks": [
+        {
+          "name": "account-retired-during-stream-no-final-publication",
+          "at": "2026-10-13T19:20:27.236Z",
+          "phase": "revoked-stream",
+          "upstreamStatus": 200,
+          "firstChunkBytes": 512,
+          "retirementOwner": "native channels.stop RPC; account AbortSignal/lifetime retirement",
+          "websocketClosedAt": "2026-10-13T19:20:26.432Z",
+          "channelStopped": true,
+          "accountRunningAfterStop": false,
+          "configPolicyChanged": false,
+          "messageId": "msg_01m4vbavrs09q30r06qzkppagr",
+          "temporaryBytesObserved": 512,
+          "finalNewFiles": 0,
+          "providerRequests": 0,
+          "botReplies": 0
+        },
+        {
+          "name": "account-retired-during-awaited-dm-preparation-zero-notice-post",
+          "at": "2026-10-13T19:20:29.805Z",
+          "phase": "revoked-dm-preparation",
+          "upstreamStatus": 201,
+          "retirementOwner": "native channels.stop RPC; account AbortSignal/lifetime retirement",
+          "websocketClosedAt": "2026-10-13T19:20:28.182Z",
+          "channelStopped": true,
+          "accountRunningAfterStop": false,
+          "configPolicyChanged": false,
+          "messageId": "msg_01m4vbb14r31sry10pbnc7qdr5",
+          "finalNoticePosts": 0,
+          "botReplies": 0,
+          "providerRequests": 0,
+          "newFiles": 0
+        },
+        {
+          "name": "native-404-terminal-notice-and-next-event",
+          "at": "2026-10-13T19:20:48.351Z",
+          "missingMessageId": "msg_01m4vbb3sfvg04671j50ggxfv7",
+          "nextMessageId": "msg_01m4vbb3ssnb61q7ed7922btdy",
+          "noticeMessageId": "msg_01m4vbb4exzqrwa1z5ynsz3bmw",
+          "nativeUploadStatus": 404,
+          "followingEventProcessed": true
+        },
+        {
+          "name": "one-503-cursor-replay-recovers-on-native-server",
+          "at": "2026-10-13T19:20:53.528Z",
+          "messageId": "msg_01m4vbbn0prw5hjf8vbppzrst4",
+          "uploadStatuses": [
+            503,
+            200
+          ],
+          "durableReplies": 1,
+          "reconnects": []
+        }
+      ],
+      "cleanup_errors": [],
+      "fixture_resources_joined": true,
+      "fixture": {
+        "entrypoint": {
+          "sha256": "39bfa02ffd9e8b939f0b1868e19289e0c203628cc34d4bb26f929ad27b01c0d5"
+        },
+        "managedGatewayChild": {
+          "sha256": "a86b43779e608475801062e271f27e87164e8aea84a3833a93bb70a9598c25d2"
+        }
+      },
+      "synthetic_input_cleanup": [
+        {
+          "phase": "revoked-stream",
+          "message_id": "msg_01m4vbavrs09q30r06qzkppagr",
+          "before_body_sha256": "c15e60036fa1cb4e32c3bb5682f1d5a838caba9ec98c187de9e6656e8f1cb43c",
+          "before_attachment_ids": [
+            "upl_01m4vbavrfp3v5vjpne98rqjpz"
+          ],
+          "before_attachment_sizes": [
+            262159
+          ],
+          "native_deleted_event": "message.deleted",
+          "native_deleted_event_cursor": "cur_01m4vbb0by98v3fn51ggctqn3y",
+          "tombstone_deleted_at": "2026-10-13T19:20:27.258270124Z",
+          "tombstone_body_empty": true,
+          "tombstone_attachments_empty": true,
+          "performed_after_stopped_owner_oracle": true
+        },
+        {
+          "phase": "revoked-dm-preparation",
+          "message_id": "msg_01m4vbb14r31sry10pbnc7qdr5",
+          "before_body_sha256": "105e746035dfdd647593634df121aa0e17b6fa89d57166219009e912c8691884",
+          "before_attachment_ids": [
+            "upl_01m4vbb12gczmrydym19sprhtt"
+          ],
+          "before_attachment_sizes": [
+            30
+          ],
+          "native_deleted_event": "message.deleted",
+          "native_deleted_event_cursor": "cur_01m4vbb2vsq2c084ytzdvxzsd1",
+          "tombstone_deleted_at": "2026-10-13T19:20:29.816978442Z",
+          "tombstone_body_empty": true,
+          "tombstone_attachments_empty": true,
+          "performed_after_stopped_owner_oracle": true
+        }
+      ]
+    }
+  },
+  "limits": [
+    "Gateway runtime proof used the pinned Bun fork; Node build/type evidence is separate.",
+    "Stream and awaited-DM revocation retired the native account through channels.stop, with allowFrom unchanged. Saved config.patch writes whose reload was deferred are not proof of active allowFrom revocation.",
+    "The 404 is emitted by the native backend for a fixture-owned missing upload file. The single 503 is a named loopback proxy fault, then the real native backend returns 200.",
+    "The optional SaveResponseMediaOptions.assertCurrent SDK callback remains a maintainer SDK review decision.",
+    "No complete-suite CI success is claimed."
+  ]
+}

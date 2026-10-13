@@ -1,0 +1,14 @@
+{
+  "candidateCommit": "fa1ebae0029a8770f538a19ca75a61ec29b5706c",
+  "base": "ed4e2f875004ec8f9d933075dae402e1c11d093c",
+  "scope": "Full candidate: pinned base through staged index and working tree; source bytes subsequently committed unchanged.",
+  "engine": "codex",
+  "model": "gpt-6.1-sol",
+  "reasoning": "medium",
+  "status": "scoped-clean",
+  "reviewCompletion": "complete",
+  "findings": [],
+  "overallCorrectness": "patch is correct",
+  "explanation": "No actionable P0\u2013P2 defects were found in the supplied candidate. Causal identity remains separate from reply routing and is carried through the embedded attempt projection and CLI prompt context. Hook metadata preserves true, false, and omitted ownership semantics while enforcing explicit user-trigger and non-synthetic guards. Batch and collected-run handling conservatively omit ambiguous causal IDs. The reported runtime replays support these paths; lint, whole-core typecheck, build, and remaining producer checks are still pending and were not independently verified.",
+  "earlierReview": "Two INDEX-only findings described the old f8 index while repairs were unstaged. Staging the proven repairs resolved both; the first report is preserved privately."
+}

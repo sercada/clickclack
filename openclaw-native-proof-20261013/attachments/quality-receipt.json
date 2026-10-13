@@ -1,0 +1,132 @@
+{
+  "candidate_head": "3fd161fbc74912345a874baa7852e955a2ba3581",
+  "production_and_test_type_ci_head": "68d716b92f270521bc416c0a0ac9546ae9711ebe",
+  "ci_workflow": "https://github.com/sercada/openclaw/actions/runs/38448248664",
+  "successful_node_build_and_type_jobs": [
+    {
+      "id": 115472753437,
+      "name": "build-artifacts",
+      "head_sha": "68d716b92f270521bc416c0a0ac9546ae9711ebe",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-13T18:39:32Z",
+      "completed_at": "2026-10-13T18:58:00Z",
+      "html_url": "https://github.com/sercada/openclaw/actions/runs/38448248664/job/115472753437",
+      "wall_seconds": 1108.0
+    },
+    {
+      "id": 115472755373,
+      "name": "check-test-types-core-3",
+      "head_sha": "68d716b92f270521bc416c0a0ac9546ae9711ebe",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-13T18:54:59Z",
+      "completed_at": "2026-10-13T19:03:50Z",
+      "html_url": "https://github.com/sercada/openclaw/actions/runs/38448248664/job/115472755373",
+      "wall_seconds": 531.0
+    },
+    {
+      "id": 115472755392,
+      "name": "check-test-types-core-2",
+      "head_sha": "68d716b92f270521bc416c0a0ac9546ae9711ebe",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-13T18:54:14Z",
+      "completed_at": "2026-10-13T19:01:59Z",
+      "html_url": "https://github.com/sercada/openclaw/actions/runs/38448248664/job/115472755392",
+      "wall_seconds": 465.0
+    },
+    {
+      "id": 115472755396,
+      "name": "check-test-types-core-4",
+      "head_sha": "68d716b92f270521bc416c0a0ac9546ae9711ebe",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-13T18:56:27Z",
+      "completed_at": "2026-10-13T19:03:52Z",
+      "html_url": "https://github.com/sercada/openclaw/actions/runs/38448248664/job/115472755396",
+      "wall_seconds": 445.0
+    },
+    {
+      "id": 115472755403,
+      "name": "check-test-types-core-5",
+      "head_sha": "68d716b92f270521bc416c0a0ac9546ae9711ebe",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-13T18:57:13Z",
+      "completed_at": "2026-10-13T19:03:53Z",
+      "html_url": "https://github.com/sercada/openclaw/actions/runs/38448248664/job/115472755403",
+      "wall_seconds": 400.0
+    },
+    {
+      "id": 115472755508,
+      "name": "check-prod-types",
+      "head_sha": "68d716b92f270521bc416c0a0ac9546ae9711ebe",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-13T18:58:02Z",
+      "completed_at": "2026-10-13T19:03:26Z",
+      "html_url": "https://github.com/sercada/openclaw/actions/runs/38448248664/job/115472755508",
+      "wall_seconds": 324.0
+    },
+    {
+      "id": 115472755526,
+      "name": "check-test-types-core-1",
+      "head_sha": "68d716b92f270521bc416c0a0ac9546ae9711ebe",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-13T18:54:22Z",
+      "completed_at": "2026-10-13T19:01:07Z",
+      "html_url": "https://github.com/sercada/openclaw/actions/runs/38448248664/job/115472755526",
+      "wall_seconds": 405.0
+    },
+    {
+      "id": 115472755719,
+      "name": "check-test-types",
+      "head_sha": "68d716b92f270521bc416c0a0ac9546ae9711ebe",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-13T19:02:10Z",
+      "completed_at": null,
+      "html_url": "https://github.com/sercada/openclaw/actions/runs/38448248664/job/115472755719"
+    }
+  ],
+  "repair": {
+    "commit": "3fd161fbc74912345a874baa7852e955a2ba3581",
+    "changed_files": [
+      "src/media/fetch.test.ts"
+    ],
+    "change": "Six existing single-statement if bodies receive braces; conditions, assertions and production blobs unchanged.",
+    "focused_lint": {
+      "command": "node scripts/run-oxlint.mjs --openclaw-focused-config --config .oxlintrc.json src/media/fetch.test.ts",
+      "exit_code": 0,
+      "log_sha256": "ce2f0ed19c6679f23947f39bc4535645066b834e3b125990e0ceb550b923f012",
+      "scope": "focused syntax/static rules; not a full type-aware lint rerun"
+    },
+    "format": {
+      "exit_code": 0,
+      "log_sha256": "6ad76ddcfaac79d10e7c9989fcf38c635f01258e32951f76e8b14230e7c5de7a"
+    },
+    "normal_commit_hooks": {
+      "exit_code": 0,
+      "log_sha256": "62d07f65d4bdc2196e1fcea933df7349775402aba7c815a6708b1568efbd850c"
+    },
+    "canonical_review": {
+      "status": "scoped-clean",
+      "maximum_priority": "P2",
+      "complete": true,
+      "confidence": 1,
+      "report_sha256": "eb9bb54cbfea5046bc527934ddb4da6382cc5de53e69dec35ffe61c1b03bdd41",
+      "status_sha256": "e6289381515c8bf1b79ae8f04620b1da4a95e97407ac29cf8e2a1f67160b444d"
+    },
+    "root_peer_review": "Six-brace-only delta accepted before commit"
+  },
+  "existing_focused_proofs": {
+    "connector_tests": 27,
+    "direct_real_filesystem_owner_cases": 4,
+    "negative_controls": "Old98f publishes after caller revocation; old98f completes all three revoked notice variants.",
+    "reviewed_repair_head": "68d716b92f270521bc416c0a0ac9546ae9711ebe"
+  },
+  "full_ci_green": false,
+  "remaining_scope": "Broader CI is not claimed green. Fork baseline ratchet/API comparisons use an older fork main; actual upstream PR CI and maintainer SDK review remain distinct."
+}

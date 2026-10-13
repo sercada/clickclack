@@ -1,0 +1,86 @@
+{
+  "sourceHead": "f8cad0fc7141936842d71b0d92fd952f573653b2",
+  "engine": {
+    "name": "pinned OpenClaw Bun",
+    "revision": "1.4.3-canary.1+65d94e715",
+    "executableSha256": "a74610af94648d54fa2312f319258a8821b509948d9dd9d6eb5f577e78a470e4"
+  },
+  "passed": false,
+  "failure": "The auxiliary before_agent_reply had the admitted ID; the real embedded before_agent_run and before_prompt_build omitted it.",
+  "observations": [
+    {
+      "status": 200,
+      "fixture": "main/owner",
+      "input": {
+        "messageId": "msg-owner",
+        "messageIdFull": "messages/owner/inbound",
+        "threadId": "threads/owner/reply",
+        "replyToId": "prior-owner",
+        "sourceIds": null
+      },
+      "hookOutputs": [
+        {
+          "messageIdPresent": false,
+          "messageId": null,
+          "senderIsOwnerPresent": true,
+          "senderIsOwner": true,
+          "senderId": "owner",
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "promptOutputs": [
+        {
+          "messageIdPresent": false,
+          "messageId": null,
+          "senderIsOwnerPresent": true,
+          "senderIsOwner": true,
+          "senderId": "owner",
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "earlyOutputs": [
+        {
+          "messageIdPresent": true,
+          "messageId": "messages/owner/inbound",
+          "senderIsOwnerPresent": true,
+          "senderIsOwner": true,
+          "senderId": "owner",
+          "channel": "causal-hook-proof",
+          "agentId": "main",
+          "trigger": "user"
+        }
+      ],
+      "threadingOutputs": [
+        {
+          "inbound": "messages/owner/inbound",
+          "currentMessageId": "threads/owner/reply"
+        },
+        {
+          "inbound": "messages/owner/inbound",
+          "currentMessageId": "threads/owner/reply"
+        },
+        {
+          "inbound": "messages/owner/inbound",
+          "currentMessageId": "threads/owner/reply"
+        },
+        {
+          "inbound": "messages/owner/inbound",
+          "currentMessageId": "threads/owner/reply"
+        }
+      ],
+      "delivered": [
+        "NATIVE_CAUSAL_FINAL"
+      ]
+    }
+  ],
+  "gatewayExit": {
+    "code": 0,
+    "signal": null
+  },
+  "modelCounter": null,
+  "telemetryNote": "The original assertion failed before model-counter readback. Its internal default zero was not a measured zero-request result."
+}

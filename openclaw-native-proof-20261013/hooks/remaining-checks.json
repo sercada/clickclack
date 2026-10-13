@@ -1,0 +1,50 @@
+{
+  "candidateCommit": "fa1ebae0029a8770f538a19ca75a61ec29b5706c",
+  "readyForMerge": false,
+  "localChecks": [
+    {
+      "name": "Full reply producer / four causal multiplicity fixtures",
+      "status": "incomplete",
+      "lifetimeSeconds": 240,
+      "outerExitCode": 124,
+      "childExitCode": 143,
+      "claim": "No completed assertion result claimed."
+    },
+    {
+      "name": "Type-aware core lint over changed files",
+      "status": "incomplete",
+      "lifetimeSeconds": 180,
+      "outerExitCode": 124,
+      "childExitCode": 143,
+      "claim": "No completed diagnostics result claimed."
+    },
+    {
+      "name": "Whole-core typecheck",
+      "status": "incomplete",
+      "ownerTimeoutMs": 180000,
+      "exitCode": 1,
+      "claim": "Native owner killed the compiler tree after its finite timeout; no completed typecheck claimed."
+    },
+    {
+      "name": "Telegram batch producer fixtures",
+      "status": "pending",
+      "claim": "New/affected full producer tests are not claimed as passed."
+    },
+    {
+      "name": "New CLI prepare owner-state / inter-session regressions",
+      "status": "pending exact-head CI",
+      "claim": "Source is included; native equivalent producer paths passed, but these added unit cases were not run locally."
+    },
+    {
+      "name": "Required build artifact",
+      "status": "pending exact-head CI",
+      "claim": "The source-performance build profile was not admitted to the current 4 GiB development budget."
+    }
+  ],
+  "separateGates": [
+    "Broad CI for the exact published candidate",
+    "Maintainer acceptance of the optional public type fields",
+    "Required SDK/security owner review"
+  ],
+  "historicalProof": "The earlier f8 source-wrapper helper, source-ID and queue selections passed (16 + 13 + 7); those receipts are retained without claiming a new-head rerun."
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_head": "3fd161fbc74912345a874baa7852e955a2ba3581",
+  "files": {
+    "README.md": "eaded186477cfa619cf90113e113a357e6b178679c6b69c2f0b53f4bfece7209",
+    "lint-repair.diff": "f2cba4fa68b25149a9ead9e925dae131fcb3b7e608cb3dbe26e6e867afd2f97e",
+    "network-audit.json": "53a6d4b8d9d425bffde6bb92a7c6397dc696cb94c832c5964943f9992c67ab18",
+    "provider-input-facts.json": "e4e4a7099ef6004efd6905dbc9429cb17aae58ef1e3b8741267bea8fd65c2db8",
+    "quality-receipt.json": "20b7c30d6f7b295212ffaee88329b99e2c2da4b69bb5e20f70319af0e52bb8ff",
+    "runtime-receipts.json": "bce7b5bce6325109e24c886b43294e463921a169d4c152b51f8dfd99817bfdda"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "candidateCommit": "fa1ebae0029a8770f538a19ca75a61ec29b5706c",
+  "candidateTree": "57f63d407b739f4d2b6ba3d2edd5be6b399ed07c",
+  "runtimeSourceHead": "f8cad0fc7141936842d71b0d92fd952f573653b2",
+  "sourceBase": "ed4e2f875004ec8f9d933075dae402e1c11d093c",
+  "runtimeTrackedDiffSha256": "bd11661e970d9ac39a00177995e3a515ea81fadb559508df3bef6265010ccf29",
+  "productionAndNativeEntryBlobs": {
+    "extensions/telegram/src/bot-message-context.session.ts": {
+      "gitBlob": "5c76d4bc36681e6ce032711a997b8759ece13d30",
+      "sha256": "d64016c4c5f10ebfb22035c17abdfeef959956616947c38d524416a58864b57e"
+    },
+    "src/agents/cli-runner.ts": {
+      "gitBlob": "8b0b465a062e805afc3e24ffb423f066b39b464b",
+      "sha256": "8b3e54394fcc618927d20eccaaeb661d0f45a39cea6726ecdb9db82322df5b4a"
+    },
+    "src/agents/cli-runner/before-agent-reply.ts": {
+      "gitBlob": "8abb5cf4f8e54c5c25e36e9593a6d9d8f351dd32",
+      "sha256": "edd96d25c5241f5f8ffc273d49f969b9b242b44ae6118fc23a4517277c9e4a02"
+    },
+    "src/agents/cli-runner/prepare.ts": {
+      "gitBlob": "079e1c3de33244a36e8e9fa74616760f3b9a5ac6",
+      "sha256": "a3b6223078d8c05194f63d7a3e56151c04e4fc65e2157a34ef56698494c91e37"
+    },
+    "src/agents/command/shared-types.ts": {
+      "gitBlob": "11909510e2c2c1de2545e3599f8044dc8cc274ef",
+      "sha256": "0355d4a8e9ea2068c88b2e92586701ba55283b680d1e40c6d442dba8419e7b0c"
+    },
+    "src/agents/embedded-agent-runner/run/shared-run-context.ts": {
+      "gitBlob": "6813cde8b78660598382bb760d81df7a7b2bf8ef",
+      "sha256": "2fb758f55930f951c100b26de0b659770f5dacc89b0aa60c913681356430efff"
+    },
+    "src/agents/harness/hook-context.ts": {
+      "gitBlob": "7b29911d8e7adcc0525aa4cf849e4faeeb8cd9d7",
+      "sha256": "58d68c4fe24b77b5bc97b157e7b99fa2af45d8678cd3758a98b54f6d893529b0"
+    },
+    "src/auto-reply/reply/agent-runner-run-params.ts": {
+      "gitBlob": "4d42bc56bff6fd5ccdc6035e7a2a176e08e7a008",
+      "sha256": "737205682889836162177afc5632eb2127a8b94d05a8b0e2a0f3fc8c0ae173d3"
+    },
+    "src/auto-reply/reply/get-reply-run-execute.ts": {
+      "gitBlob": "2eb2714b441703a243cefaf3f6c4a5b4b47651a2",
+      "sha256": "22043073b7c74584a99db743ffa4a66991afc9559f8be2f7e9d0b6d82d7670bb"
+    },
+    "src/auto-reply/reply/queue/collected-run.ts": {
+      "gitBlob": "17e1d59aa4e260b821f8cd63d972541029f267ed",
+      "sha256": "077803a7dda841fa1b69cb2df47f60af59373d8323f3219c63776fcecb9f7320"
+    },
+    "src/auto-reply/reply/queue/drain.ts": {
+      "gitBlob": "519cd5c039385479b0c4d0a5b3739a999a4b90a1",
+      "sha256": "c5f6f42295d9c527e334da99d8e665d636be7c00895186f81889510175e0b414"
+    },
+    "src/auto-reply/reply/queue/types.ts": {
+      "gitBlob": "412daed789a06a636ec991d1e5dd6194a6271013",
+      "sha256": "cca263ea701cda90ed86eb322a949ad025934ca591c4fdce35564ce7cc24b555"
+    },
+    "src/auto-reply/reply/source-turn-id.ts": {
+      "gitBlob": "7a2c1bfdf866d74140254c0e5eb2a05529d886ef",
+      "sha256": "c621a05d226598de0ed5e3af06af5433c70b87bb6c25315e180c68f412626cb4"
+    },
+    "src/plugins/hook-agent-context.ts": {
+      "gitBlob": "30736913c31e5cfdfd6c719a6594a838aca29b98",
+      "sha256": "7748cbf72e8513896c967f9164f5040074d9c1f44bff227f0df56b46041cb585"
+    },
+    "src/plugins/hook-agent-context.types.ts": {
+      "gitBlob": "0e086dbf6ab8ed70876fb2435b1178a81693af55",
+      "sha256": "fb651e0db05d28ac24e6c8d757d7f6b2a996a6369530d140892c6ab27bb4a2ae"
+    },
+    "scripts/dev/tui-questions-proof.ts": {
+      "gitBlob": "45f6197ab568b99a52b0bec6bc4f59b5992043bf",
+      "sha256": "faab6745576b3e1e1d7245624541a68e2e93ee82b38e671d464695dc8340101d"
+    },
+    "scripts/e2e/mock-openai-server.mjs": {
+      "gitBlob": "03d6247dc6659af5839dc361efb9f7374b50b57c",
+      "sha256": "478124da693194c4b016ab21c06b46626a1b895f2cb5c9e15249f4db5d548c11"
+    },
+    "scripts/lib/openclaw-bun.json": {
+      "gitBlob": "1e5b58d6adbad0985272c1a18e0339048a858d0d",
+      "sha256": "3b96b2c498610069767cc2c85d2faccbdafc0625eab2f5422013f7279f50fe4e"
+    }
+  },
+  "nativeFixtureSha256": {
+    "drive-native.mjs": "790c0ed9264be8cad99b48145bd575a884862470421b67e82c091e50956f11a6",
+    "native-plugin/index.mjs": "0fadd92c1ad7ff3399a32f9c661344085dbba46a5cee14f73c211905524c8f33",
+    "native-plugin/backend.mjs": "e734148801c44e3f12ae848760fa2557a280bf20634068ea66218ed254017757",
+    "native-plugin/package.json": "eaa1897ce3dce9baae6a49e7a7b9fd747424c632593dc731b77f659259a4ce47",
+    "native-plugin/openclaw.plugin.json": "77ee5e560f412f833218b2761c9266ca3592e2f8a047a990b17880de19e63178"
+  },
+  "verifiedAgainstCommittedBlobs": true,
+  "registeredRegressionTestBlob": "8ae80822b3f85ef24bbf891a1a354da27e6705ef",
+  "note": "All 18 production/native-entry Git blobs and all 5 native fixture SHA256 values match the successful replay. Only a required context label in a unit-test assertion changed after replay; that test is not loaded by the native fixture. The registered regression was executed after that correction and its committed test blob matches."
+}

@@ -1,0 +1,88 @@
+{
+  "allowed": {
+    "raw_provider_log_sha256": "1a0afd5e2b9ed037d47836e48cd3dd96a92f1bedc5c3f7cb969ac1d3e0539b0a",
+    "real_http_request_facts": [
+      {
+        "sequence": 1,
+        "path": "/v1/responses",
+        "content_facts": [
+          {
+            "type": "input_text"
+          },
+          {
+            "type": "input_text"
+          },
+          {
+            "type": "legacy_media",
+            "mimeType": "image/png"
+          },
+          {
+            "type": "input_image",
+            "mimeType": "image/png",
+            "byteLength": 68
+          },
+          {
+            "type": "input_text"
+          }
+        ],
+        "matching_fixture_markers": [
+          "ATTACHMENT_ALLOWED_OK"
+        ]
+      }
+    ]
+  },
+  "denied": {
+    "raw_provider_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "real_http_request_facts": []
+  },
+  "retirement_retry": {
+    "raw_provider_log_sha256": "94a2245828273829fa2233222aa45dc256395601fa1f222a0fb18b9870e96251",
+    "real_http_request_facts": [
+      {
+        "sequence": 1,
+        "path": "/v1/responses",
+        "content_facts": [
+          {
+            "type": "input_text"
+          },
+          {
+            "type": "input_text"
+          },
+          {
+            "type": "input_text"
+          }
+        ],
+        "matching_fixture_markers": [
+          "AFTER_404_EVENT_OK"
+        ]
+      },
+      {
+        "sequence": 2,
+        "path": "/v1/responses",
+        "content_facts": [
+          {
+            "type": "input_text"
+          },
+          {
+            "type": "input_text"
+          },
+          {
+            "type": "legacy_media",
+            "mimeType": "image/png"
+          },
+          {
+            "type": "input_image",
+            "mimeType": "image/png",
+            "byteLength": 68
+          },
+          {
+            "type": "input_text"
+          }
+        ],
+        "matching_fixture_markers": [
+          "AFTER_503_RETRY_OK"
+        ]
+      }
+    ]
+  }
+}

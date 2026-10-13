@@ -1,0 +1,326 @@
+{
+  "allowed": {
+    "raw_audit_sha256": "70c0795428fe564ec6dd30fb2746bc7bd5a9f9d68b8269be7c7178f14c8602e5",
+    "requests": [
+      {
+        "phase": "setup",
+        "method": "GET",
+        "path": "/api/me",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "setup",
+        "method": "GET",
+        "path": "/api/realtime/events",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "setup",
+        "method": "UPGRADE",
+        "path": "/api/realtime/ws",
+        "afterCursor": ""
+      },
+      {
+        "phase": "allowed-image",
+        "method": "GET",
+        "path": "/api/messages/msg_01m4v9jp6yeej2eh0qzkcqd9td",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "allowed-image",
+        "method": "GET",
+        "path": "/api/uploads/upl_01m4v9jp5w4gaf0d311j8m00eq",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "allowed-image",
+        "method": "POST",
+        "path": "/api/channels/chn_01m4v9jp4b1t471na0bjqhz2c2/messages",
+        "actor": "fixture-bot",
+        "status": 201,
+        "upstreamStatus": 201
+      }
+    ]
+  },
+  "denied": {
+    "raw_audit_sha256": "bbabde7eb6ba56061fa8f8b7989c49111defb46663442d40c2a082bdcb9bdf01",
+    "requests": [
+      {
+        "phase": "setup",
+        "method": "GET",
+        "path": "/api/me",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "setup",
+        "method": "GET",
+        "path": "/api/realtime/events",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "setup",
+        "method": "UPGRADE",
+        "path": "/api/realtime/ws",
+        "afterCursor": "",
+        "openedAt": "2026-10-13T19:16:32.651Z",
+        "closedAt": "2026-10-13T19:16:37.275Z",
+        "closePhase": "unadmitted"
+      },
+      {
+        "phase": "unadmitted",
+        "method": "GET",
+        "path": "/api/messages/msg_01m4vb3w5jwvxwhc6bkyeec4ks",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      }
+    ]
+  },
+  "retirement_retry": {
+    "raw_audit_sha256": "12357472e34cfd71a301292619dfa3bc804ff3940b42574008d40c9629948aab",
+    "requests": [
+      {
+        "phase": "setup",
+        "method": "GET",
+        "path": "/api/me",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "setup",
+        "method": "GET",
+        "path": "/api/realtime/events",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "setup",
+        "method": "UPGRADE",
+        "path": "/api/realtime/ws",
+        "afterCursor": "",
+        "openedAt": "2026-10-13T19:20:19.291Z",
+        "closedAt": "2026-10-13T19:20:26.432Z",
+        "closePhase": "revoked-stream"
+      },
+      {
+        "phase": "revoked-stream",
+        "method": "GET",
+        "path": "/api/messages/msg_01m4vbavrs09q30r06qzkppagr",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "revoked-stream",
+        "method": "GET",
+        "path": "/api/uploads/upl_01m4vbavrfp3v5vjpne98rqjpz",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200,
+        "hold": "stream"
+      },
+      {
+        "phase": "revoked-dm-preparation",
+        "method": "GET",
+        "path": "/api/me",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "revoked-dm-preparation",
+        "method": "GET",
+        "path": "/api/realtime/events",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "revoked-dm-preparation",
+        "method": "UPGRADE",
+        "path": "/api/realtime/ws",
+        "afterCursor": "cur_01m4vbb0by98v3fn51ggctqn3y",
+        "openedAt": "2026-10-13T19:20:27.790Z",
+        "closedAt": "2026-10-13T19:20:28.182Z",
+        "closePhase": "revoked-dm-preparation"
+      },
+      {
+        "phase": "revoked-dm-preparation",
+        "method": "GET",
+        "path": "/api/messages/msg_01m4vbb14r31sry10pbnc7qdr5",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "revoked-dm-preparation",
+        "method": "GET",
+        "path": "/api/uploads/upl_01m4vbb12gczmrydym19sprhtt",
+        "actor": "fixture-bot",
+        "status": 404,
+        "upstreamStatus": 404
+      },
+      {
+        "phase": "revoked-dm-preparation",
+        "method": "POST",
+        "path": "/api/dms",
+        "actor": "fixture-bot",
+        "status": 201,
+        "upstreamStatus": 201,
+        "hold": "dm"
+      },
+      {
+        "phase": "native-404-and-next-event",
+        "method": "GET",
+        "path": "/api/me",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "native-404-and-next-event",
+        "method": "GET",
+        "path": "/api/realtime/events",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "native-404-and-next-event",
+        "method": "UPGRADE",
+        "path": "/api/realtime/ws",
+        "afterCursor": "cur_01m4vbb2vsq2c084ytzdvxzsd1",
+        "openedAt": "2026-10-13T19:20:30.368Z",
+        "closedAt": "2026-10-13T19:20:48.517Z",
+        "closePhase": "one-503-replay-recovers"
+      },
+      {
+        "phase": "native-404-and-next-event",
+        "method": "GET",
+        "path": "/api/messages/msg_01m4vbb3sfvg04671j50ggxfv7",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "native-404-and-next-event",
+        "method": "GET",
+        "path": "/api/uploads/upl_01m4vbb3mk71m2cb5hqpxztb7f",
+        "actor": "fixture-bot",
+        "status": 404,
+        "upstreamStatus": 404
+      },
+      {
+        "phase": "native-404-and-next-event",
+        "method": "POST",
+        "path": "/api/channels/chn_01m4vbb3k91an1syafqfy35165/messages",
+        "actor": "fixture-bot",
+        "status": 201,
+        "upstreamStatus": 201
+      },
+      {
+        "phase": "native-404-and-next-event",
+        "method": "GET",
+        "path": "/api/messages/msg_01m4vbb3ssnb61q7ed7922btdy",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "native-404-and-next-event",
+        "method": "POST",
+        "path": "/api/channels/chn_01m4vbb3k91an1syafqfy35165/messages",
+        "actor": "fixture-bot",
+        "status": 201,
+        "upstreamStatus": 201
+      },
+      {
+        "phase": "one-503-replay-recovers",
+        "method": "GET",
+        "path": "/api/messages/msg_01m4vbbn0prw5hjf8vbppzrst4",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "one-503-replay-recovers",
+        "method": "GET",
+        "path": "/api/uploads/upl_01m4vbbn0bc4hebsxvmgfk6j6h",
+        "actor": "fixture-bot",
+        "status": 503,
+        "fault": "one explicit proxy 503; request not forwarded"
+      },
+      {
+        "phase": "one-503-replay-recovers",
+        "method": "GET",
+        "path": "/api/realtime/events",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "one-503-replay-recovers",
+        "method": "GET",
+        "path": "/api/messages/msg_01m4vbbn0prw5hjf8vbppzrst4",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "one-503-replay-recovers",
+        "method": "GET",
+        "path": "/api/uploads/upl_01m4vbbn0bc4hebsxvmgfk6j6h",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "one-503-replay-recovers",
+        "method": "POST",
+        "path": "/api/channels/chn_01m4vbbmz1wkjwrynacj6883c0/messages",
+        "actor": "fixture-bot",
+        "status": 201,
+        "upstreamStatus": 201
+      },
+      {
+        "phase": "one-503-replay-recovers",
+        "method": "GET",
+        "path": "/api/realtime/events",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "one-503-replay-recovers",
+        "method": "GET",
+        "path": "/api/realtime/events",
+        "actor": "fixture-bot",
+        "status": 200,
+        "upstreamStatus": 200
+      },
+      {
+        "phase": "one-503-replay-recovers",
+        "method": "UPGRADE",
+        "path": "/api/realtime/ws",
+        "afterCursor": "cur_01m4vbbsy34vkbjfw8tp5ag0nf",
+        "openedAt": "2026-10-13T19:20:53.535Z",
+        "closedAt": "2026-10-13T19:20:53.967Z",
+        "closePhase": "one-503-replay-recovers"
+      }
+    ]
+  }
+}

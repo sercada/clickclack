@@ -1,0 +1,31 @@
+{
+  "candidateCommit": "fa1ebae0029a8770f538a19ca75a61ec29b5706c",
+  "command": [
+    "node",
+    "scripts/test-projects.mts",
+    "src/agents/cli-runner/causal-identity.test.ts",
+    "--maxWorkers=1",
+    "--watch",
+    "--run"
+  ],
+  "exitCode": 0,
+  "passedTests": 3,
+  "seconds": 128.31,
+  "testGitBlob": "8ae80822b3f85ef24bbf891a1a354da27e6705ef",
+  "testSha256": "c52b211c162792d0f0217f0ca25f5f571bacae7b5112a844d31de728eda7cfb8",
+  "ownershipCases": [
+    {
+      "senderIsOwner": true,
+      "fieldPresent": true
+    },
+    {
+      "senderIsOwner": false,
+      "fieldPresent": true
+    },
+    {
+      "senderIsOwner": null,
+      "fieldPresent": false
+    }
+  ],
+  "coverage": "Real plugin registration/callback plus the production embedded message projection before before_agent_run. Routing is asserted independently. CLI pre-reply coverage remains auxiliary; real backend coverage is in the native receipt."
+}
