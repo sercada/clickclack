@@ -1,0 +1,4 @@
+sqlite: v0.7.0 -> candidate upgrade: channel/message/upload/event counts unchanged; old roots, thread, search and file bytes readable
+sqlite: moderator DELETE ->403; channel/messages/upload unchanged; cleanup/event delta0; exclusive file intact
+sqlite: former owner after committed transfer DELETE ->403; channel/messages/upload unchanged; cleanup/event delta0; exclusive file intact
+sqlite: current owner DELETE ->204; exclusive content removed; other channel/file/search retained; historical cursor replays channel.deleted
