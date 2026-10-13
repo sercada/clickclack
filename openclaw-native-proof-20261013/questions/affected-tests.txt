@@ -1,0 +1,78 @@
+[test] starting test/vitest/vitest.database-worker-watch.config.ts
+
+ RUN  v5.0.1 SOURCE
+
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.test.ts > handleClickClackInbound > logs and skips delivery when model mode produces no sendable text 202ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.test.ts > handleClickClackInbound > keeps native progress opt-in and durable activity independent 2234ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.test.ts > handleClickClackInbound > maps the authoritative message id to the agent run and correlates the final reply 33ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.test.ts > handleClickClackInbound > routes media replies through required durable delivery 56ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.test.ts > handleClickClackInbound > accepts ClickClack DM target syntax in allowFrom 36ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.test.ts > handleClickClackInbound > preserves session policy when an account overrides the routed agent 49ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.test.ts > handleClickClackInbound > rotates an old attachment before dispatch after the main session is replaced 63ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.test.ts > handleClickClackInbound > drops inbound delivery as soon as the main session is archived 15ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.test.ts > handleClickClackInbound > drops a persisted managed channel after discussions are disabled 17ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.test.ts > handleClickClackInbound > drops delayed inbound after the live binding has been released 21ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.test.ts > handleClickClackInbound > does not lose managed ownership when the local account id changes 27ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.test.ts > handleClickClackInbound > quarantines unbound channel events while a create outcome is ambiguous 17ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.test.ts > handleClickClackInbound > drops a managed channel after the discussion workspace changes 17ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.test.ts > handleClickClackInbound > preserves binding scope for a canonically equivalent account agent 34ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.test.ts > handleClickClackInbound > does not dispatch agent turns from senders outside allowFrom 22ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.test.ts > ClickClack direct-model response prefix > renders root, account, and templated prefixes on model replies 40ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.test.ts > ClickClack direct-model response prefix > does not add a second prefix when the completion already opens with one 21ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.test.ts > ClickClack direct-model bot loop protection > suppresses the second bot message before model completion 19ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.test.ts > ClickClack direct-model bot loop protection > retries the same bot message without consuming another loop slot 24ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > records attachment persistence failures before dropping inbound delivery 135ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > denies bots by default 54ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > accepts legacy messages without author … 1274ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > does not apply wildcard group bot polic… 19ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > does not dispatch ClickClack activity rows as bot prompts 14ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > dispatches an allowed bot-authored message through the shared loop guard 39ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > preserves mention gating for another bo… 36ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rejects a mismatched root message 26ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rejects a root from another workspace 17ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rejects a root from another channel 17ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > does not equate a bot reply with owning… 17ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > preserves mention gating when root look… 24ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > preserves the mention-only bot sender p… 17ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > preserves mention gating in the parent … 25ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > uses exact channel policy over the wild… 16ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > inherits wildcard thread policy through… 43ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks policy when thread mentions become required during root lookup 30ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks policy when sender access is revoked during root lookup 48ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks policy when bot senders are disabled during root lookup 18ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks policy when the account is disabled during root lookup 15ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks policy when the account is removed during root lookup 14ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks policy when the default account's channel is removed during root lookup 29ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks policy when the bot identity is reassigned during root lookup 19ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks policy when the workspace is reassigned during root lookup 13ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks policy when the public server is reassigned during root lookup 16ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks policy when the API server is reassigned during root lookup 28ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks admission when bot identity changes while ingress settles 26ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks admission when thread mentions become required while ingress settles 24ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks admission when ordinary group sender access is revoked… while ingress settles 26ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks admission when ordinary group bot access is revoked wi… while ingress settles 20ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks admission when static sender group membership is revok… while ingress settles 36ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks admission when static sender group is cloned without c… while ingress settles 34ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks admission when bot sender now requires a mention while ingress settles 23ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks admission when bot sender satisfies its new mention re… while ingress settles 42ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks admission when bot sender is replaced by a human-only … while ingress settles 59ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks admission when an authorized command retains activation while ingress settles 128ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > rechecks discussion access after the thread root lookup 236ms
+ ✓ |extension-database-workers| extensions/clickclack/src/inbound.mention-gating.test.ts > ClickClack inbound mention gating > evaluates mentions against the managed discussion agent before dispatch 44ms
+ ✓ |extensions| extensions/clickclack/src/questions.access.test.ts > accepts an explicit card answer with requireMention=false 161ms
+stderr | unknown test
+[sqlite-test-lifecycle] extensions/clickclack/src/questions.access.test.ts: retiring openclaw.stateDatabaseLifecycle
+[sqlite-test-lifecycle] extensions/clickclack/src/questions.access.test.ts: retiring openclaw.stateSnapshotOwners
+[sqlite-test-lifecycle] extensions/clickclack/src/questions.access.test.ts: retiring openclaw.agentDatabaseLifecycle
+[sqlite-test-lifecycle] extensions/clickclack/src/questions.access.test.ts: retiring openclaw.sessionStateNotices
+
+ ✓ |extensions| extensions/clickclack/src/questions.access.test.ts > accepts an explicit card answer with requireMention=true 25ms
+ ✓ |extensions| extensions/clickclack/src/questions.access.test.ts > refuses a answer after sender policy changes during the awaited Gateway read 23ms
+ ✓ |extensions| extensions/clickclack/src/questions.access.test.ts > refuses a skip after sender policy changes during the awaited Gateway read 20ms
+
+ Test Files  3 passed (3)
+      Tests  61 passed (61)
+   Start at  21:46:52
+   Duration  232.92s (transform 78%, import 16%, tests 3%, worker 2%, setup 1%)
+
+[test] passed 1 Vitest shard in 242.10s

@@ -1,0 +1,59 @@
+{
+  "candidateCommit": "fa1ebae0029a8770f538a19ca75a61ec29b5706c",
+  "command": [
+    "node",
+    "scripts/test-projects.mts",
+    "src/agents/cli-runner/prepare.test.ts",
+    "--maxWorkers=1",
+    "--watch",
+    "--run",
+    "--testNamePattern",
+    "passes the causal source and admitted ownership|marks inter-session prompts after CLI prompt-build"
+  ],
+  "runtimeSelector": "OPENCLAW_VITEST_RUNTIME=bun",
+  "runtimePin": "1.4.3-canary.1+65d94e715",
+  "runtimeExecutableSha256": "a74610af94648d54fa2312f319258a8821b509948d9dd9d6eb5f577e78a470e4",
+  "nodeOrchestrator": true,
+  "bunProcessesObserved": 2,
+  "exitCode": 0,
+  "passedTests": 4,
+  "selectedOwnerCases": 3,
+  "selectedInterSessionNegativeCases": 1,
+  "skippedByExplicitNameFilter": 114,
+  "seconds": 195.68,
+  "vitestSeconds": 184.84,
+  "testGitBlob": "d0c04b355a6f97869696717007cf60306480472f",
+  "testSha256": "9c118bf9859ce6d5131a9940c81b0f7ac75c381819b83ae452e94c443b744ea7",
+  "noAssertionOrMockChangesForBun": true,
+  "snapshotUpdatedAtUTC": "2026-10-13T19:48:31Z",
+  "completedOutcomeObservedAtUTC": "2026-10-13T19:36:14Z",
+  "assertedExpectations": [
+    {
+      "sourceMessageId": "spaces/test/messages/inbound",
+      "routingMessageId": "spaces/test/threads/reply",
+      "owner": true,
+      "ownerFieldPresent": true
+    },
+    {
+      "sourceMessageId": "spaces/test/messages/inbound",
+      "routingMessageId": "spaces/test/threads/reply",
+      "owner": false,
+      "ownerFieldPresent": true
+    },
+    {
+      "sourceMessageId": "spaces/test/messages/inbound",
+      "routingMessageId": "spaces/test/threads/reply",
+      "owner": null,
+      "ownerFieldPresent": false
+    },
+    {
+      "origin": "inter_session",
+      "technicalSourceId": "technical-message-id",
+      "suppliedOwner": true,
+      "sourceFieldPresent": false,
+      "ownerFieldPresent": false
+    }
+  ],
+  "ownerRuntimeReference": "scripts/lib/vitest-test-runtime.mts",
+  "runtimeDocumentation": "docs/help/testing/suites.md:446"
+}

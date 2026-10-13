@@ -1,0 +1,12 @@
+{
+  "sourceHead": "9e901296221756a82a25949261c7708f91a38e72",
+  "sourceDirty": false,
+  "sourceTree": "d4584d9e8dd8d24398c449764a556147e460b746",
+  "bunRevision": "1.4.3-canary.1+65d94e715",
+  "bunSha256": "a74610af94648d54fa2312f319258a8821b509948d9dd9d6eb5f577e78a470e4",
+  "files": {
+    "gateway-entry.mts": "781987ee11ecca02c122fe4ac5fbb987e6720c20b2b90963b54279b87c836803",
+    "run-proof.mts": "e9682a954441f8dadb317483a726821ab6c9de7f45ae91d3054d296102d22e5f"
+  },
+  "fixtureChange": "Qualified native CLI finalization and IPC disconnect, native modelPolicy prepared before write, clean exact candidate head/tree, actual non-null account start preserved during allowFrom edits, real channels.stop and native stop timestamp"
+}

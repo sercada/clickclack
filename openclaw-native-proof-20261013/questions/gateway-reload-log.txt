@@ -1,0 +1,10 @@
+2026-10-13T21:54:41.127+02:00 [gateway] config.patch write actor=cli device=unknown-device ip=unknown-ip conn=synthetic-client changedPaths=channels.clickclack.allowFrom restartReason=config.patch
+2026-10-13T21:54:41.660+02:00 [reload] config change detected; evaluating reload (channels.clickclack.allowFrom, meta)
+2026-10-13T21:54:47.152+02:00 [gateway] config.patch write actor=cli device=unknown-device ip=unknown-ip conn=synthetic-client changedPaths=channels.clickclack.allowFrom restartReason=config.patch
+2026-10-13T21:54:47.420+02:00 [reload] config change detected; evaluating reload (channels.clickclack.allowFrom)
+2026-10-13T21:54:53.759+02:00 [gateway] config.patch write actor=cli device=unknown-device ip=unknown-ip conn=synthetic-client changedPaths=channels.clickclack.allowFrom restartReason=config.patch
+2026-10-13T21:54:54.022+02:00 [reload] config change detected; evaluating reload (channels.clickclack.allowFrom)
+2026-10-13T21:54:58.531+02:00 [gateway] config.patch write actor=cli device=unknown-device ip=unknown-ip conn=synthetic-client changedPaths=channels.clickclack.allowFrom restartReason=config.patch
+2026-10-13T21:54:58.774+02:00 [reload] config change detected; evaluating reload (channels.clickclack.allowFrom)
+2026-10-13T21:55:06.947+02:00 [gateway] received SIGTERM; shutting down
+2026-10-13T21:55:07.257+02:00 [state/agent-db] agent database clean-close receipt: written

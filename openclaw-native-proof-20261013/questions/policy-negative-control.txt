@@ -1,0 +1,147 @@
+bun test v1.4.3-canary.1 (65d94e715)
+
+extensions/clickclack/src/access.policy.test.ts:
+(pass) prepares current sender admission: scope=default direct=false allowed=false [101.54ms]
+51 |         body: "A synthetic policy check",
+52 |         ...(direct ? { channel_id: undefined, direct_conversation_id: "dcn_1" } : {}),
+53 |       }),
+54 |     });
+55 | 
+56 |     expect(access.shouldDispatch).toBe(allowed);
+                                       ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (SOURCE/extensions/clickclack/src/access.policy.test.ts:56:35)
+(fail) prepares current sender admission: scope=default direct=false allowed=true [9.15ms]
+(pass) prepares current sender admission: scope=default direct=true allowed=false [4.28ms]
+51 |         body: "A synthetic policy check",
+52 |         ...(direct ? { channel_id: undefined, direct_conversation_id: "dcn_1" } : {}),
+53 |       }),
+54 |     });
+55 | 
+56 |     expect(access.shouldDispatch).toBe(allowed);
+                                       ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (SOURCE/extensions/clickclack/src/access.policy.test.ts:56:35)
+(fail) prepares current sender admission: scope=default direct=true allowed=true [10.09ms]
+(pass) prepares current sender admission: scope=inherited direct=false allowed=false [8.05ms]
+51 |         body: "A synthetic policy check",
+52 |         ...(direct ? { channel_id: undefined, direct_conversation_id: "dcn_1" } : {}),
+53 |       }),
+54 |     });
+55 | 
+56 |     expect(access.shouldDispatch).toBe(allowed);
+                                       ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (SOURCE/extensions/clickclack/src/access.policy.test.ts:56:35)
+(fail) prepares current sender admission: scope=inherited direct=false allowed=true [2.90ms]
+(pass) prepares current sender admission: scope=inherited direct=true allowed=false [23.42ms]
+51 |         body: "A synthetic policy check",
+52 |         ...(direct ? { channel_id: undefined, direct_conversation_id: "dcn_1" } : {}),
+53 |       }),
+54 |     });
+55 | 
+56 |     expect(access.shouldDispatch).toBe(allowed);
+                                       ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (SOURCE/extensions/clickclack/src/access.policy.test.ts:56:35)
+(fail) prepares current sender admission: scope=inherited direct=true allowed=true [3.37ms]
+(pass) prepares current sender admission: scope=account direct=false allowed=false [3.36ms]
+51 |         body: "A synthetic policy check",
+52 |         ...(direct ? { channel_id: undefined, direct_conversation_id: "dcn_1" } : {}),
+53 |       }),
+54 |     });
+55 | 
+56 |     expect(access.shouldDispatch).toBe(allowed);
+                                       ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (SOURCE/extensions/clickclack/src/access.policy.test.ts:56:35)
+(fail) prepares current sender admission: scope=account direct=false allowed=true [3.64ms]
+(pass) prepares current sender admission: scope=account direct=true allowed=false [2.92ms]
+51 |         body: "A synthetic policy check",
+52 |         ...(direct ? { channel_id: undefined, direct_conversation_id: "dcn_1" } : {}),
+53 |       }),
+54 |     });
+55 | 
+56 |     expect(access.shouldDispatch).toBe(allowed);
+                                       ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (SOURCE/extensions/clickclack/src/access.policy.test.ts:56:35)
+(fail) prepares current sender admission: scope=account direct=true allowed=true [5.22ms]
+
+src/gateway/config-reload.clickclack-policy.test.ts:
+37 |     channels: {
+38 |       clickclack: named ? { accounts: { support: { allowFrom } } } : { allowFrom },
+39 |     },
+40 |   });
+41 |   const result = plan(config(["usr_owner"]), config([]));
+42 |   expect(isNoopGatewayReloadPlan(result)).toBe(true);
+                                               ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (SOURCE/src/gateway/config-reload.clickclack-policy.test.ts:42:43)
+(fail) retains the monitor for allowFrom edits (named=%s) [15.86ms]
+37 |     channels: {
+38 |       clickclack: named ? { accounts: { support: { allowFrom } } } : { allowFrom },
+39 |     },
+40 |   });
+41 |   const result = plan(config(["usr_owner"]), config([]));
+42 |   expect(isNoopGatewayReloadPlan(result)).toBe(true);
+                                               ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (SOURCE/src/gateway/config-reload.clickclack-policy.test.ts:42:43)
+(fail) retains the monitor for allowFrom edits (named=%s) [4.63ms]
+46 | 
+47 | it("retains inherited sender policy while keeping an account override", () => {
+48 |   const config = (allowFrom: string[]): OpenClawConfig => ({
+49 |     channels: { clickclack: { allowFrom, accounts: { support: {}, private: { allowFrom: [] } } } },
+50 |   });
+51 |   expect(isNoopGatewayReloadPlan(plan(config(["usr_owner"]), config([])))).toBe(true);
+                                                                                ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: false
+
+      at <anonymous> (SOURCE/src/gateway/config-reload.clickclack-policy.test.ts:51:76)
+(fail) retains inherited sender policy while keeping an account override [6.86ms]
+(pass) still replaces the transport when baseUrl changes alongside sender policy [14.97ms]
+(pass) still replaces the transport when token changes alongside sender policy [1.56ms]
+(pass) still replaces the transport when workspace changes alongside sender policy [6.79ms]
+(pass) keeps shared access-group changes owned by channel replacement [1.81ms]
+
+ 10 pass
+ 9 fail
+ 25 expect() calls
+Ran 19 tests across 2 files. [4.57s]
+[test] FAILED (exit 1)

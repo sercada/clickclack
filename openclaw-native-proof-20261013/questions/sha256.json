@@ -1,0 +1,14 @@
+{
+  "README.md": "6ac297d6769d2822b74f95794b3af60b7b723ddef2ea4a88dfeeaf8ed0494a5e",
+  "affected-tests.txt": "a6a4734e638bcf404b21abcc17689392b630b7e16372699bcfcf87ab08fe9738",
+  "canonical-review-status.json": "c5b12834d5efacf12933b3b3445726e8fda09de7cce87e6f1b9861b745864923",
+  "canonical-review.txt": "c4b14dc56efc94b98b5c6aae720719dd28ed14237040cc51e59542d665b30f3f",
+  "frozen-fixture.json": "c935b624d97d8b7560068eca6575918f124a4b3198a8bc145d4e7858241ee207",
+  "gateway-entry.mts": "781987ee11ecca02c122fe4ac5fbb987e6720c20b2b90963b54279b87c836803",
+  "gateway-reload-log.txt": "78eb9e02abb9dc7181d4f4bb6935695fed01ca6d0766660f1cc5803815d5c393",
+  "new-policy-tests.txt": "9bbcd657ce0357fcb59f5aa0d024deea794038d47aa415ba4b8b187ca6bceccb",
+  "policy-negative-control.txt": "2d439fbc876ff73108df6d1145b7828846080a5ee3eae6c25f39ec9de8efc977",
+  "previous-head-reload-log.txt": "92bb0728b1a311d978cc26ccd03f7483fabb1b09f04e002fd24596e4678fa463",
+  "receipt.json": "fd9d0eca9751c6e44a168859cf4cd0fbf35609f58457c8f4d8e44eed787d739f",
+  "transcript.txt": "cf48673fed184e4dcd46f91fd41820e49327e5d749144db77e30cc95da94f4e4"
+}

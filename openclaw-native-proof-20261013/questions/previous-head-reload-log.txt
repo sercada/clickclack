@@ -1,0 +1,7 @@
+Previous source head: 28f913b1ba70bada6e2eebf1f35e86f01c5116be
+Observed: original pending question.get held; native config.patch request timed out after 30 seconds; the durable write was not retried.
+The held diagnostic read was released during cleanup, and native reload then applied.
+2026-10-13T21:04:41.632+02:00 [gateway] config.patch write actor=cli device=unknown-device ip=unknown-ip conn=synthetic-client changedPaths=channels.clickclack.allowFrom restartReason=config.patch
+2026-10-13T21:04:42.257+02:00 [reload] config change detected; evaluating reload (agents.defaults.modelPolicy, channels.clickclack.allowFrom, meta)
+2026-10-13T21:04:42.342+02:00 [reload] config change requires channel reload (clickclack) — deferring until 2 operation(s), 1 reply(ies), 1 embedded run(s), 3 gateway request(s), 1 admitted agent run(s) complete
+2026-10-13T21:05:14.341+02:00 [reload] config hot reload applied (agents.defaults.modelPolicy, channels.clickclack.allowFrom)

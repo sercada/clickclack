@@ -1,0 +1,3 @@
+autoreview scoped-clean: no accepted/actionable findings in the selected Git scope and priority
+overall: patch is correct (0.83)
+No actionable P0–P2 defects were established from the supplied patch and context. The allowFrom repair uses the existing narrow reload contract and refreshes sender admission from current host configuration while retaining the running account identity. Answer and skip paths reauthorize after the awaited Gateway read, and card work checks account lifetime before writes. The SDK additions preserve existing runtime methods. This assessment uses the supplied evidence; project code was not executed, and current-candidate Gateway negative checks and exact new CI remain pending.

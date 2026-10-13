@@ -8,7 +8,17 @@
       "lifetimeSeconds": 240,
       "outerExitCode": 124,
       "childExitCode": 143,
-      "claim": "No completed assertion result claimed."
+      "claim": "2 completed passes; no full selection/suite pass claimed.",
+      "latestCandidateResult": "Pinned Bun/Vitest source wrapper completed 2 of 4 cases; finite 240-second timeout then interrupted the other 2. Original Node timeout retained.",
+      "completedCases": [
+        "single source",
+        "distinct MessageSids batch"
+      ],
+      "casesWithoutCompletedReceipt": [
+        "batch boundaries",
+        "repeated one-source facts"
+      ],
+      "latestReceipt": "reply-binding-producer-partial.json"
     },
     {
       "name": "Type-aware core lint over changed files",
@@ -32,8 +42,9 @@
     },
     {
       "name": "New CLI prepare owner-state / inter-session regressions",
-      "status": "pending exact-head CI",
-      "claim": "Source is included; native equivalent producer paths passed, but these added unit cases were not run locally."
+      "status": "passed 4/4 on exact candidate",
+      "claim": "3 new owner-state cases plus strengthened inter-session omission passed through the supported source wrapper with pinned Bun; no assertion/mock changes.",
+      "receipt": "cli-prepare-producer-4.json"
     },
     {
       "name": "Required build artifact",
@@ -46,5 +57,7 @@
     "Maintainer acceptance of the optional public type fields",
     "Required SDK/security owner review"
   ],
-  "historicalProof": "The earlier f8 source-wrapper helper, source-ID and queue selections passed (16 + 13 + 7); those receipts are retained without claiming a new-head rerun."
+  "historicalProof": "The earlier f8 source-wrapper helper, source-ID and queue selections passed (16 + 13 + 7); those receipts are retained without claiming a new-head rerun.",
+  "snapshotUpdatedAtUTC": "2026-10-13T19:48:31Z",
+  "readinessPolicy": "Build artifact plus focused proof controls ready status. Public SDK/security owner acceptance controls merge separately; this snapshot does not claim readiness or merge acceptance."
 }

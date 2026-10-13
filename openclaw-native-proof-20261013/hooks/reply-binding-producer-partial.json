@@ -1,0 +1,49 @@
+{
+  "candidateCommit": "fa1ebae0029a8770f538a19ca75a61ec29b5706c",
+  "command": [
+    "node",
+    "scripts/test-projects.mts",
+    "src/auto-reply/reply/get-reply.binding-route-owner.test.ts",
+    "--maxWorkers=1",
+    "--watch",
+    "--run",
+    "--testNamePattern",
+    "projects causal identity at the reply producer"
+  ],
+  "runtimeSelector": "OPENCLAW_VITEST_RUNTIME=bun",
+  "runtimePin": "1.4.3-canary.1+65d94e715",
+  "runtimeExecutableSha256": "a74610af94648d54fa2312f319258a8821b509948d9dd9d6eb5f577e78a470e4",
+  "nodeOrchestrator": true,
+  "outerExitCode": 124,
+  "childExitCode": 143,
+  "lifetimeSeconds": 240,
+  "status": "incomplete",
+  "selectedTests": 4,
+  "completedPasses": [
+    {
+      "name": "single source",
+      "testMs": 28045,
+      "expectedCausalMessageId": "binding"
+    },
+    {
+      "name": "batch list",
+      "testMs": 9855,
+      "expectedCausalMessageId": null
+    }
+  ],
+  "casesWithoutCompletedReceipt": [
+    "batch boundaries",
+    "repeated one-source facts"
+  ],
+  "assertionFailureObserved": false,
+  "testGitBlob": "147171dc1e36ccd61fa78f62d513e93665b67a53",
+  "testSha256": "0026f3e79dfecbe611ad91c8a5cec18af0bb7c5bd3b1fe37c3e4392a1bc23c74",
+  "scopeInactiveAfterJoin": true,
+  "noAssertionOrMockChangesForBun": true,
+  "snapshotUpdatedAtUTC": "2026-10-13T19:48:31Z",
+  "joinedOutcomeObservedAtUTC": "2026-10-13T19:41:47Z",
+  "fullSelectionPassed": false,
+  "noIdenticalRetryAfterTimeout": true,
+  "ownerRuntimeReference": "scripts/lib/vitest-test-runtime.mts",
+  "runtimeDocumentation": "docs/help/testing/suites.md:446"
+}
