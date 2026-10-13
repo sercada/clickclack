@@ -1,0 +1,160 @@
+{
+  "candidateHead": "2608831af10df189d3e27965346b63963b6c3ba7",
+  "parentHead": "3fd161fbc74912345a874baa7852e955a2ba3581",
+  "remoteHeadVerified": "2608831af10df189d3e27965346b63963b6c3ba7",
+  "prReadback": {
+    "url": "https://github.com/openclaw/openclaw/pull/141457",
+    "headSha": "2608831af10df189d3e27965346b63963b6c3ba7",
+    "headRef": "fix/clickclack-inbound-attachments",
+    "isDraft": false,
+    "state": "open"
+  },
+  "changedFiles": [
+    "extensions/clickclack/src/gateway.media.test.ts",
+    "extensions/clickclack/src/http-client.media.test.ts",
+    "extensions/clickclack/src/http-client.test.ts",
+    "extensions/clickclack/src/inbound.media.test.ts"
+  ],
+  "sourceOnlyTestChanges": true,
+  "productionBlobIdentity": [
+    {
+      "path": "src/media/fetch.ts",
+      "at3fd": "3d15de2742e3da40c5d98360a322d9fd6db07ddd",
+      "atCandidate": "3d15de2742e3da40c5d98360a322d9fd6db07ddd"
+    },
+    {
+      "path": "src/plugin-sdk/media-runtime.ts",
+      "at3fd": "86c3df82a44a2fb968b9b0a699fead0091b2b258",
+      "atCandidate": "86c3df82a44a2fb968b9b0a699fead0091b2b258"
+    },
+    {
+      "path": "extensions/clickclack/src/http-client.ts",
+      "at3fd": "82181e91e7d8a8146e65bd570858568abad011bf",
+      "atCandidate": "82181e91e7d8a8146e65bd570858568abad011bf"
+    },
+    {
+      "path": "extensions/clickclack/src/inbound.ts",
+      "at3fd": "be1bd373e8e192cf77c5c36085563043904affc4",
+      "atCandidate": "be1bd373e8e192cf77c5c36085563043904affc4"
+    },
+    {
+      "path": "extensions/clickclack/src/gateway.ts",
+      "at3fd": "0635c8c2e9e5342f76194b85fb5f6438e1f04d47",
+      "atCandidate": "0635c8c2e9e5342f76194b85fb5f6438e1f04d47"
+    },
+    {
+      "path": "extensions/clickclack/src/types.ts",
+      "at3fd": "a2556784343e59467cc98b5f68e6a978a11326f7",
+      "atCandidate": "a2556784343e59467cc98b5f68e6a978a11326f7"
+    }
+  ],
+  "originalCi": {
+    "url": "https://github.com/openclaw/openclaw/actions/runs/38455707346",
+    "candidateHead": "3fd161fbc74912345a874baa7852e955a2ba3581",
+    "testedMergeHead": "863409de8fbb46cc9cbbf91e95f7270e281787cb",
+    "testedMainParent": "7403f98918678bcb8c92e7539bd0b274581fa817",
+    "ownLintErrorsFixed": {
+      "curly": 16,
+      "noShadow": 1,
+      "unnecessaryDefaultTypeArguments": 5,
+      "unsafeBaseStringification": 5
+    },
+    "coreTypes4": {
+      "classification": "pre-existing",
+      "candidateJob": 115499567866,
+      "mainJob": 115474574756,
+      "baselineRun": 38448821812,
+      "signature": "TS2339 src/config/sessions/session-actor-storage-binding.test.ts(199,50) listIncognito absent"
+    },
+    "globalLint": {
+      "classification": "unknown",
+      "job": 115499567779,
+      "reason": "SDK declaration step timed out; main job selects a different scope"
+    },
+    "ui": {
+      "classification": "unknown",
+      "job": 115498484292,
+      "case": "Follow-up summaries and reachable actions at 1280x720",
+      "observedMetrics": {
+        "reachesBottom": false,
+        "scrollTop": 0,
+        "scrollHeight": 0,
+        "clientHeight": 0,
+        "clientWidth": 0
+      },
+      "mergeBaseInputFilesByteIdentical": 14,
+      "wholeGraphIdentityClaim": false,
+      "runtimeReproductionClaim": false
+    },
+    "ciGate": {
+      "job": 115504150640,
+      "classificationIsInformational": true,
+      "exemptionClaim": false
+    }
+  },
+  "localChecks": {
+    "format": {
+      "status": "pass",
+      "files": 4
+    },
+    "astLint": {
+      "status": "pass",
+      "files": 4,
+      "typeAware": false
+    },
+    "diffCheck": {
+      "status": "pass"
+    },
+    "normalCommitHooks": {
+      "status": "pass"
+    },
+    "selectedSdkPreparation": {
+      "status": "incomplete",
+      "sourceOwner": "scripts/prepare-extension-package-boundary-artifacts.mts",
+      "engine": "Bun 1.4.3-canary.1+65d94e715",
+      "binarySha256": "a74610af94648d54fa2312f319258a8821b509948d9dd9d6eb5f577e78a470e4",
+      "roots": 55,
+      "nativeCompilerTimeoutMs": 300000,
+      "outerTimeoutSeconds": 420,
+      "elapsedSeconds": 425.154,
+      "exitCode": 124,
+      "validEmit": false,
+      "NodeProofClaim": false
+    },
+    "affected20": {
+      "status": "incomplete",
+      "owner": "scripts/run-vitest.mjs",
+      "nodeOrchestrationUnchanged": true,
+      "vitestRuntime": "Bun pinned fork",
+      "nativeBunTestRunner": false,
+      "selectedCases": 20,
+      "outerTimeoutSeconds": 300,
+      "elapsedSeconds": 301.918,
+      "exitCode": 124,
+      "compiledWorkerExitCode": 130,
+      "completedAssertions": 0,
+      "repeatAttempt": false
+    },
+    "canonicalReview": {
+      "scope": "complete four-file staged delta against 3fd",
+      "status": "scoped-clean",
+      "priority": "P2",
+      "confidence": 0.94,
+      "sourceFingerprintsUnchangedAfterHooks": true,
+      "localTypeOrTestPassClaim": false
+    },
+    "peerReview": {
+      "approved": true,
+      "movedCasesVerified": 8,
+      "oraclesPreserved": true
+    },
+    "ownFiniteProcessesDrained": true
+  },
+  "remaining": {
+    "sdkAssertCurrentAcceptance": "maintainer decision",
+    "globalLintPreparation": "unknown/incomplete",
+    "uiScrollFailure": "unknown",
+    "currentCandidateFullCiGreenClaim": false
+  },
+  "priorRuntimeEvidence": "Existing 68/3fd native Gateway evidence remains linked to byte-identical production; no repeated Gateway run or new live-policy claim."
+}
